@@ -1,3 +1,3 @@
-Fritz und Heinz Petersen 
+Heinz Petersen 
 
-Fritz Petersen ist im Oktober 1945 in Russland gefallen, sein Bruder Heinz am 6. Februar des selben Jahres in Ostpreußen.
+Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen, sein Bruder Fritz im Oktober des selben Jahres in Russland.
