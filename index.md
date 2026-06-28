@@ -3,6 +3,7 @@
 
 Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal der gefallenen Soldaten zu erfahren. Nachfolgend finden Sie die Gesamtübersicht:
 
+* [_includes](./_includes/)
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
 * [Erich Goercke](./goercke-erich/)

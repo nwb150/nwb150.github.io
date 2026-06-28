@@ -39,8 +39,8 @@ for folder in items:
             
         print(f"Generiere wetterfesten QR-Code für: {display_name} (Ordner: {folder})")
         
-        # Die kurze Basis-URL mit dem dynamischen Ordnernamen
-        url = f"https://stramon.github.io/dssvn/{folder}/"
+        # Die kurze Basis-URL für die neue Organisation
+        url = f"https://nwb150.github.io/{folder}/"
         
         qr = qrcode.QRCode(
             version=None,
