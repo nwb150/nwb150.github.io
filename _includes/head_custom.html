@@ -8,54 +8,23 @@
     .main { margin-left: 0 !important; }
     .main-content { max-width: 52rem !important; margin: 0 auto !important; }
   }
-
-  /* --- MOBIL-OPTIMIERUNG (Isolierte Variante) --- */
-  
-  /* Unseren eigenen, vom Theme isolierten Burger-Link exakt stylen */
-  .custom-isolated-burger {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: #7253ed !important; /* Das lila Logo-Design des Themes */
-    background: transparent !important;
-    border: none !important;
-    padding: 12px !important;
-    cursor: pointer !important;
-    text-decoration: none !important;
-  }
-
-  /* Sicherstellen, dass das originale SVG-Icon die richtige Größe behält */
-  .custom-isolated-burger svg {
-    width: 24px !important;
-    height: 24px !important;
-    fill: currentColor !important;
-  }
-
-  /* Auf dem Desktop ausblenden */
-  @media (min-width: 50rem) {
-    .custom-isolated-burger { display: none !important; }
-  }
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Wir greifen uns den echten Menü-Button des Themes über seine ID
-    var nativeBtn = document.getElementById("menu-button");
-    
-    if (nativeBtn) {
-      // Wir erstellen einen absolut autarken Link zur Startseite
-      var homeLink = document.createElement("a");
-      homeLink.href = "/";
-      homeLink.className = "custom-isolated-burger"; // Keine Theme-Klassen!
-      homeLink.innerHTML = nativeBtn.innerHTML; // Kopiert das originale lila ☰ SVG-Icon
-      
-      // Kappe jede Event-Übertragung nach oben
-      homeLink.addEventListener("click", function(e) {
+  (function() {
+    // Diese Funktion fängt jede Berührung des Burger-Buttons radikal ab
+    function hijackBurger(e) {
+      var target = e.target;
+      if (target && (target.id === 'menu-button' || target.closest('#menu-button'))) {
+        e.preventDefault();
         e.stopPropagation();
-      }, { capture: true });
-
-      // Ersetze den alten Button im Header
-      nativeBtn.parentNode.replaceChild(homeLink, nativeBtn);
+        window.location.href = '/';
+      }
     }
-  });
+
+    // 'true' am Ende aktiviert die Capturing-Phase (Abfangen beim Herabsteigen im DOM-Baum)
+    window.addEventListener('click', hijackBurger, true);
+    window.addEventListener('touchstart', hijackBurger, true);
+    window.addEventListener('touchend', hijackBurger, true);
+  })();
 </script>
