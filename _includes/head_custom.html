@@ -34,7 +34,12 @@
       left: 0 !important;
       width: 100% !important;
       height: 100% !important;
-      z-index: 99999 !important; /* Liegt über allem, inklusive dem Icon */
+      z-index: 99999 !important;
+    }
+
+    /* 5. Das blaue Aufblitzen (Tap-Highlighting) beim Antippen komplett unterdrücken */
+    .site-title, .site-title::after, #menu-button, .site-header {
+      -webkit-tap-highlight-color: transparent !important;
     }
   }
 </style>
