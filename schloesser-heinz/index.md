@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Heinz Schlösser 
 
 Heinz Schlösser blieb am 12.10.1940 auf See.

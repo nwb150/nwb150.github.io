@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Hans Paetow
 
 ![Hans-Paetow](hanz-paetow-1.jpg)

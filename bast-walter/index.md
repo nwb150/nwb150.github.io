@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Walter Bast 
 Gestorben 23.08.1944
 
