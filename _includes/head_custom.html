@@ -9,3 +9,19 @@
     .main-content { max-width: 52rem !important; margin: 0 auto !important; }
   }
 </style>
+
+<script>
+  // Klick auf das Burger-Menü abfangen und direkt zur Übersichtsseite umleiten
+  document.addEventListener("DOMContentLoaded", function() {
+    var menuSelectors = '.site-nav-trigger, .main-nav-trigger, .js-main-nav-trigger, #js-main-nav-trigger';
+    var triggers = document.querySelectorAll(menuSelectors);
+    
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.href = '/';
+      }, true); // 'true' fängt den Klick in der Vorflugphase ab, bevor das Theme das Menü ausklappt
+    });
+  });
+</script>
