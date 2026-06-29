@@ -16,43 +16,41 @@
     display: none !important; 
   }
 
-  /* Sicherstellen, dass die Kopfzeile die richtige Positionierung erlaubt */
-  .site-header {
-    position: relative !important;
-  }
-
-  /* Unseren neuen, unkaputtbaren Übersicht-Button stylen */
-  .custom-mobile-nav {
+  /* Unser neues, intuitives Burger-Menü-Zeichen als direkter Link */
+  .custom-burger-link {
     position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #7253ed !important; /* Das lila der Just-the-Docs Links */
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 6px 10px;
-    border: 1px solid #e9ebec;
-    border-radius: 4px;
-    background-color: #f5f6f7;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #7253ed !important; /* Das lila Logo-Design des Themes */
+    font-size: 1.7rem;
+    text-decoration: none !important;
+    z-index: 9999;
   }
 
-  /* Auf dem Desktop wird der mobile Button ausgeblendet */
+  /* Auf dem PC blenden wir das mobile Zeichen aus */
   @media (min-width: 50rem) {
-    .custom-mobile-nav { display: none !important; }
+    .custom-burger-link { display: none !important; }
   }
 </style>
 
 <script>
-  // Wir injizieren den echten Link direkt nach dem Laden in die mobile Kopfzeile
+  // Wir injizieren das Symbol direkt nach dem Laden in die mobile Kopfzeile
   document.addEventListener("DOMContentLoaded", function() {
-    var header = document.querySelector(".site-header");
+    // Falls das Theme je nach Version .site-header oder .main-header nutzt:
+    var header = document.querySelector(".site-header") || document.querySelector(".main-header");
     if (header) {
-      var navLink = document.createElement("a");
-      navLink.href = "/";
-      navLink.className = "custom-mobile-nav";
-      navLink.innerHTML = "Übersicht ☰";
-      header.appendChild(navLink);
+      header.style.position = "relative"; // Basis für absolute Positionierung des Icons
+      
+      var burgerLink = document.createElement("a");
+      burgerLink.href = "/";
+      burgerLink.className = "custom-burger-link";
+      burgerLink.innerHTML = "☰";
+      header.appendChild(burgerLink);
     }
   });
 </script>
