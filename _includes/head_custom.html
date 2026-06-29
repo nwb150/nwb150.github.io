@@ -8,23 +8,33 @@
     .main { margin-left: 0 !important; }
     .main-content { max-width: 52rem !important; margin: 0 auto !important; }
   }
-</style>
 
-<script>
-  (function() {
-    // Diese Funktion fängt jede Berührung des Burger-Buttons radikal ab
-    function hijackBurger(e) {
-      var target = e.target;
-      if (target && (target.id === 'menu-button' || target.closest('#menu-button'))) {
-        e.preventDefault();
-        e.stopPropagation();
-        window.location.href = '/';
-      }
+  /* --- MOBIL-OPTIMIERUNG (Reine CSS-Methode) --- */
+  @media (max-width: 50rem) {
+    /* 1. Das blaue Menü-Dropdown komplett im Keim ersticken */
+    .site-nav { 
+      display: none !important; 
     }
 
-    // 'true' am Ende aktiviert die Capturing-Phase (Abfangen beim Herabsteigen im DOM-Baum)
-    window.addEventListener('click', hijackBurger, true);
-    window.addEventListener('touchstart', hijackBurger, true);
-    window.addEventListener('touchend', hijackBurger, true);
-  })();
-</script>
+    /* 2. Dem originalen Burger-Button die Klick-Logik entziehen (wird rein passives Icon) */
+    #menu-button { 
+      pointer-events: none !important; 
+    }
+
+    /* 3. Die obere Kopfzeile für die absolute Ausdehnung vorbereiten */
+    .site-header { 
+      position: relative !important; 
+    }
+
+    /* 4. Den funktionierenden Titel-Link unsichtbar über die GESAMTE obere Zeile legen */
+    .site-title::after {
+      content: "" !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 99999 !important; /* Liegt über allem, inklusive dem Icon */
+    }
+  }
+</style>
