@@ -19,6 +19,7 @@ Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schic
 * [Willy Joehnk](./joehnk-willy/)
 * [Wilhelm Johst](./johst-wilhelm/)
 * [Kurt Klein](./klein-kurt/)
+* [Friedrich Marxen](./marxen-friedrich/)
 * [Johannes Marxen](./marxen-johannes/)
 * [Hans Paetow](./paetow-hans/)
 * [Fritz Petersen](./petersen-fritz/)
