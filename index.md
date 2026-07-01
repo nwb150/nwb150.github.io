@@ -1,9 +1,9 @@
 # Die sprechenden Steine von Neuwittenbek
 ### 150 Jahre Dorfjubiläum • Gedenkprojekt
 
-Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal unserer getöteten Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren. 
+Scanne die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal unserer getöteten Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren. 
 
-Nachfolgend finden Sie die Gesamtübersicht:
+Nachfolgend findest du die Gesamtübersicht:
 
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
