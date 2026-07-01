@@ -1,13 +1,13 @@
 # Die sprechenden Steine von Neuwittenbek
 ### 150 Jahre Dorfjubiläum • Gedenkprojekt
 
-Scanne die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal unserer getöteten Nachbarn, Väter, Brüder und Söhne zu erfahren. Nachfolgend findest Du die Gesamtübersicht:
+Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal der gefallenen Soldaten zu erfahren. Nachfolgend finden Sie die Gesamtübersicht:
 
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
 * [Erich Goercke](./goercke-erich/)
 * [Max Gosch](./gosch-max/)
-* [Hans Grotkopp](./grotkopp-hanz/)
+* [Hanz Grotkopp](./grotkopp-hanz/)
 * [Kurt Hansen](./hansen-kurt/)
 * [Helmut Hass](./hass-helmut/)
 * [Johannes Hass](./hass-johannes/)
@@ -19,6 +19,7 @@ Scanne die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal 
 * [Willy Joehnk](./joehnk-willy/)
 * [Wilhelm Johst](./johst-wilhelm/)
 * [Kurt Klein](./klein-kurt/)
+* [Fritz Kuest](./kuest-Fritz/)
 * [Friedrich Marxen](./marxen-friedrich/)
 * [Johannes Marxen](./marxen-johannes/)
 * [Hans Paetow](./paetow-hans/)
