@@ -35,14 +35,15 @@
 
   /* --- GLOBALE KOPFZEILEN-STYLINGS (Für PC & Mobile) --- */
   
-  /* 1. Die Kopfzeile als Flexbox-Container definieren (Titel links, Burger rechts) */
+  /* 1. Die Kopfzeile als Flexbox-Container definieren (Titel links, Burger rechts, perfekt zentriert) */
   .site-header { 
     display: flex !important; 
     position: relative !important; 
     justify-content: space-between !important; /* Erzwingt Aufteilung (links/rechts) */
-    align-items: center !important;
+    align-items: center !important;             /* Vertikale Zentrierung aller Elemente */
     padding: 0.75rem 1rem !important;
     width: 100% !important;
+    min-height: 3.5rem !important;              /* Garantiert eine einheitliche Höhe */
   }
 
   /* 2. Den "Just the Docs" Navigationstitel und Text-Leaks im Keim ersticken */
@@ -50,17 +51,30 @@
     display: none !important; 
   }
 
-  /* 3. Das Burger-Icon am PC und Handy sichtbar machen (wird per pointer-events zum passiven Bild) */
+  /* 3. Das Burger-Icon perfekt auf der Mittelachse einmitten */
   #menu-button, .site-nav-trigger { 
-    display: block !important;
-    order: 2 !important; /* Zwingt das Icon ans Ende der Flexbox (rechts) */
+    display: flex !important;
+    align-items: center !important;             /* Zentriert das Icon im Button */
+    justify-content: center !important;
+    order: 2 !important;                        /* Zwingt das Icon nach rechts */
     pointer-events: none !important; 
-    margin-right: 0 !important;
+    margin: 0 !important;                       /* Entfernt störende Theme-Abstände */
+    padding: 0 !important;
+    height: auto !important;
+    line-height: 1 !important;
+  }
+
+  /* Eventuelle SVG-Grafiken im Button ebenfalls auf Block setzen, um Baseline-Absacken zu verhindern */
+  #menu-button svg, .site-nav-trigger svg {
+    display: block !important;
+    margin: 0 !important;
   }
 
   /* 4. Den Titel-Link als unsichtbare Klickfläche über die GESAMTE Kopfzeile legen */
   .site-title {
-    order: 1 !important; /* Zwingt den Titel an den Anfang der Flexbox (links) */
+    order: 1 !important;                        /* Zwingt den Titel nach links */
+    margin: 0 !important;
+    line-height: 1.2 !important;
   }
   .site-title::after {
     content: "" !important;
