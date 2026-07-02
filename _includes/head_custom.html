@@ -2,32 +2,59 @@
   /* Den englischen Footer ausblenden */
   .site-footer { display: none !important; }
 
-  /* --- PC-LAYOUT (Seitenleiste weg, Text zentrieren) --- */
+  /* --- PC-LAYOUT (Seitenleiste zur horizontalen Kopfzeile machen) --- */
   @media (min-width: 50rem) {
-    .side-bar { display: none !important; }
-    .main { margin-left: 0 !important; }
-    .main-content { max-width: 52rem !important; margin: 0 auto !important; }
+    /* Die Seitenleiste oben als flache Bar einrasten lassen */
+    .side-bar {
+      position: static !important;
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      padding: 0 !important;
+      background-color: #f5f6fa !important; /* Gleicher lila/grauer Hintergrund wie mobil */
+      border-right: none !important;
+      border-bottom: 1px solid #e9ebf2 !important;
+    }
+
+    /* Alles andere in der Seitenleiste (alten Navigationsbaum) ausblenden */
+    .side-bar > *:not(.site-header) {
+      display: none !important;
+    }
+
+    /* Hauptinhalt zentrieren und Abstand nach oben anpassen */
+    .main {
+      margin-left: 0 !important;
+    }
+    .main-content {
+      max-width: 52rem !important;
+      margin: 0 auto !important;
+      padding: 2rem 1rem !important;
+    }
   }
 
-  /* --- GLOBALE KOPFZEILEN-OPTIMIERUNG (Für PC & Mobile) --- */
+  /* --- GLOBALE KOPFZEILEN-STYLINGS (Für PC & Mobile) --- */
   
-  /* 1. Die obere Kopfzeile überall aktivieren und für absolute Ausdehnung vorbereiten */
+  /* Kopfzeile flexibel ausrichten (Titel links, Burger rechts) */
   .site-header { 
     display: flex !important; 
     position: relative !important; 
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.75rem 1rem !important;
   }
 
-  /* 2. Das Standard-Menü-Dropdown komplett im Keim ersticken */
+  /* Das standardmäßige Dropdown-Menü komplett deaktivieren */
   .site-nav { 
     display: none !important; 
   }
 
-  /* 3. Dem Burger-Button die Klick-Logik entziehen (wird zum passiven Icon) */
-  #menu-button { 
+  /* Das Burger-Icon auf PC und Handy erzwingen, aber Klicks durchlassen */
+  #menu-button, .site-nav-trigger { 
+    display: block !important;
     pointer-events: none !important; 
   }
 
-  /* 4. Den funktionierenden Titel-Link als unsichtbaren Riesenteppich über die GESAMTE Zeile legen */
+  /* Den Titel-Link als unsichtbare Klickfläche über die GESAMTE Kopfzeile legen */
   .site-title::after {
     content: "" !important;
     position: absolute !important;
@@ -38,16 +65,15 @@
     z-index: 99999 !important;
   }
 
-  /* 5. Das blaue Aufblitzen beim Antippen auf Smartphones unterdrücken */
+  /* Blaues Aufblitzen beim Tippen auf Handys verhindern */
   .site-title, .site-title::after, #menu-button, .site-header {
     -webkit-tap-highlight-color: transparent !important;
   }
 </style>
 
-<!-- NUR AUF DER ÜBERSICHTSSEITE: Burger-Menü komplett ausblenden -->
 {% if page.url == "/" or page.url == "/index.html" %}
 <style>
-  #menu-button {
+  #menu-button, .site-nav-trigger {
     display: none !important;
   }
 </style>
