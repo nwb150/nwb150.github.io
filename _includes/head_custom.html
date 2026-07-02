@@ -2,49 +2,49 @@
   /* Den englischen Footer ausblenden */
   .site-footer { display: none !important; }
 
-  /* Auf PCs die doppelte Seitenleiste abschalten und Text zentrieren */
+  /* --- PC-LAYOUT (Seitenleiste weg, Text zentrieren) --- */
   @media (min-width: 50rem) {
     .side-bar { display: none !important; }
     .main { margin-left: 0 !important; }
     .main-content { max-width: 52rem !important; margin: 0 auto !important; }
   }
 
-  /* --- MOBIL-OPTIMIERUNG (Reine CSS-Methode) --- */
-  @media (max-width: 50rem) {
-    /* 1. Das blaue Menü-Dropdown komplett im Keim ersticken */
-    .site-nav { 
-      display: none !important; 
-    }
+  /* --- GLOBALE KOPFZEILEN-OPTIMIERUNG (Für PC & Mobile) --- */
+  
+  /* 1. Die obere Kopfzeile überall aktivieren und für absolute Ausdehnung vorbereiten */
+  .site-header { 
+    display: flex !important; 
+    position: relative !important; 
+  }
 
-    /* 2. Dem originalen Burger-Button die Klick-Logik entziehen */
-    #menu-button { 
-      pointer-events: none !important; 
-    }
+  /* 2. Das Standard-Menü-Dropdown komplett im Keim ersticken */
+  .site-nav { 
+    display: none !important; 
+  }
 
-    /* 3. Die obere Kopfzeile für die absolute Ausdehnung vorbereiten */
-    .site-header { 
-      position: relative !important; 
-    }
+  /* 3. Dem Burger-Button die Klick-Logik entziehen (wird zum passiven Icon) */
+  #menu-button { 
+    pointer-events: none !important; 
+  }
 
-    /* 4. Den funktionierenden Titel-Link unsichtbar über die GESAMTE obere Zeile legen */
-    .site-title::after {
-      content: "" !important;
-      position: absolute !important;
-      top: 0 !important;
-      left: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      z-index: 99999 !important;
-    }
+  /* 4. Den funktionierenden Titel-Link als unsichtbaren Riesenteppich über die GESAMTE Zeile legen */
+  .site-title::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 99999 !important;
+  }
 
-    /* 5. Das blaue Aufblitzen beim Antippen unterdrücken */
-    .site-title, .site-title::after, #menu-button, .site-header {
-      -webkit-tap-highlight-color: transparent !important;
-    }
+  /* 5. Das blaue Aufblitzen beim Antippen auf Smartphones unterdrücken */
+  .site-title, .site-title::after, #menu-button, .site-header {
+    -webkit-tap-highlight-color: transparent !important;
   }
 </style>
 
-/* --- NUR AUF DER ÜBERSICHTSSEITE: Burger-Menü komplett ausblenden --- */
+<!-- NUR AUF DER ÜBERSICHTSSEITE: Burger-Menü komplett ausblenden -->
 {% if page.url == "/" or page.url == "/index.html" %}
 <style>
   #menu-button {
