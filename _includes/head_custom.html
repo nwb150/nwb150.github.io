@@ -1,45 +1,91 @@
 <style>
-  /* Den englischen Footer ausblenden */
+  /* --- Globale Basis-Anpassungen --- */
   .site-footer { display: none !important; }
 
-  /* Auf PCs die doppelte Seitenleiste abschalten und Text zentrieren */
   @media (min-width: 50rem) {
     .side-bar { display: none !important; }
     .main { margin-left: 0 !important; }
     .main-content { max-width: 52rem !important; margin: 0 auto !important; }
   }
 
-  /* --- MOBIL-OPTIMIERUNG (Reine CSS-Methode) --- */
   @media (max-width: 50rem) {
-    /* 1. Das blaue Menü-Dropdown komplett im Keim ersticken */
-    .site-nav { 
+    .site-nav { display: none !important; }
+  }
+
+  /* --- Dynamische Weiche je nach Seite (Jekyll Liquid) --- */
+  {% if page.url == "/" or page.url == "/index.html" %}
+    
+    /* 1. ÜBERSICHTSSEITE: Kopfzeile komplett unsichtbar und leer */
+    .site-header { 
       display: none !important; 
     }
 
-    /* 2. Dem originalen Burger-Button die Klick-Logik entziehen (wird rein passives Icon) */
-    #menu-button { 
-      pointer-events: none !important; 
+  {% else %}
+    
+    /* 2. EINZELSEITEN (Soldaten): Identisch auf PC und Smartphone */
+    .site-header {
+      display: block !important;       /* Erpfeift die Anzeige auch auf dem PC */
+      position: relative !important;
+      width: 100% !important;
+      height: 3.5rem !important;       /* Feste, saubere Höhe für die Leiste */
+      background-color: #ffffff !important;
+      border-bottom: 1px solid #eeeeee !important;
+      padding: 0 !important;
+      margin: 0 !important;
     }
 
-    /* 3. Die obere Kopfzeile für die absolute Ausdehnung vorbereiten */
-    .site-header { 
-      position: relative !important; 
-    }
-
-    /* 4. Den funktionierenden Titel-Link unsichtbar über die GESAMTE obere Zeile legen */
-    .site-title::after {
-      content: "" !important;
+    /* Der Startseiten-Link wird unsichtbar über die GANZE Kopfzeile gezogen */
+    .site-title {
       position: absolute !important;
       top: 0 !important;
       left: 0 !important;
       width: 100% !important;
       height: 100% !important;
-      z-index: 99999 !important;
+      z-index: 9999 !important;        /* Liegt ganz oben und fängt jeden Klick ab */
+      font-size: 0 !important;         /* Killt den Text "Die sprechenden Steine..." */
+      color: transparent !important;
+      text-indent: -9999px !important; /* Ausfallsicherung für Text-Verstecken */
+      background: transparent !important;
     }
 
-    /* 5. Das blaue Aufblitzen (Tap-Highlighting) beim Antippen komplett unterdrücken */
-    .site-title, .site-title::after, #menu-button, .site-header {
+    /* Das Burger-Symbol (wird rein optisch oben rechts platziert) */
+    #menu-button {
+      display: block !important;       /* Sichtbar auf Handy UND PC */
+      position: absolute !important;
+      top: 50% !important;
+      right: 1.5rem !important;
+      transform: translateY(-50%) !important;
+      z-index: 5 !important;           /* Liegt unter dem unsichtbaren Riesen-Link */
+      pointer-events: none !important; /* Klicks fallen durch auf .site-title */
+      
+      /* Absolute Farb-Fixierung (Keine visuelle Reaktion bei Interaktion) */
+      color: #333333 !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+
+    /* Schutz der SVG-Grafik des Burgers vor Farbänderungen (Hover/Active) */
+    #menu-button svg, 
+    #menu-button svg path {
+      fill: #333333 !important;
+      stroke: #333333 !important;
+    }
+
+    /* Aggressiver Reset für Hover-, Focus- und Active-Zustände */
+    #menu-button:hover, #menu-button:active, #menu-button:focus,
+    #menu-button:hover svg, #menu-button:active svg {
+      color: #333333 !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      fill: #333333 !important;
+      stroke: #333333 !important;
+    }
+
+    /* Verhindert das unschöne blaue Flashen beim Tippen auf Smartphones */
+    .site-header, .site-title, #menu-button {
       -webkit-tap-highlight-color: transparent !important;
     }
-  }
+
+  {% endif %}
 </style>
