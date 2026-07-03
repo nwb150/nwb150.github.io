@@ -11,7 +11,7 @@ Nachfolgend findest du die Gesamtübersicht:
 * [Walter Bast](./bast-walter/)
 * [Erich Goercke](./goercke-erich/)
 * [Max Gosch](./gosch-max/)
-* [Hanz Grotkopp](./grotkopp-hanz/)
+* [Hans Grotkopp](./grotkopp-hans/)
 * [Kurt Hansen](./hansen-kurt/)
 * [Helmut Hass](./hass-helmut/)
 * [Johannes Hass](./hass-johannes/)
@@ -40,3 +40,4 @@ Nachfolgend findest du die Gesamtübersicht:
 * [Bruno Staude](./staude-bruno/)
 * [Heinrich Stroeh](./stroeh-heinrich/)
 <!-- SOLDIER_LIST_END -->
+
