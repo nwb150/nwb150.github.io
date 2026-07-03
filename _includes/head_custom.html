@@ -1,89 +1,110 @@
 <style>
-  /* --- Globale Basis-Anpassungen --- */
+  /* --- GLOBALE GRUNDLAGEN (Gelten für PC und Handy) --- */
   .site-footer { display: none !important; }
+  .site-nav { display: none !important; } /* Die Navigationsliste brauchen wir nirgends */
 
-  @media (min-width: 50rem) {
-    .side-bar { display: none !important; }
-    .main { margin-left: 0 !important; }
-    .main-content { max-width: 52rem !important; margin: 0 auto !important; }
-  }
-
-  @media (max-width: 50rem) {
-    .site-nav { display: none !important; }
-  }
-
-  /* --- Dynamische Weiche je nach Seite (Jekyll Liquid) --- */
+  /* --- DYNAMISCHE WEICHE ÜBER JEKYLL LIQUID --- */
   {% if page.url == "/" or page.url == "/index.html" %}
     
-    /* 1. ÜBERSICHTSSEITE: Kopfzeile komplett unsichtbar und leer */
-    .site-header { 
-      display: none !important; 
+    /* ==========================================================
+       1. ÜBERSICHTSSEITE (Startseite)
+       Keine Kopfzeile, kein Menü - nur der nackte Inhalt.
+       ========================================================== */
+    .side-bar { display: none !important; }
+    
+    @media (min-width: 50rem) {
+      .main { margin-left: 0 !important; }
+      .main-content { max-width: 52rem !important; margin: 0 auto !important; }
     }
 
   {% else %}
+
+    /* ==========================================================
+       2. EINZELSEITEN (Soldaten)
+       Kopfzeile oben im Mobile-Look, erzwungen auch auf dem PC.
+       ========================================================== */
     
-    /* 2. EINZELSEITEN (Soldaten): Identisch auf PC und Smartphone */
+    /* PC-Layout der Seitenleiste knacken und in eine Top-Bar umwandeln */
+    @media (min-width: 50rem) {
+      .side-bar {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: block !important;
+        border-right: none !important;
+        background: transparent !important;
+      }
+      .main { margin-left: 0 !important; }
+      .main-content { max-width: 52rem !important; margin: 0 auto !important; }
+    }
+
+    /* Kopfzeile exakt definieren (wirkt auf PC + Handy) */
     .site-header {
-      display: block !important;       /* Erpfeift die Anzeige auch auf dem PC */
+      display: block !important;
       position: relative !important;
       width: 100% !important;
-      height: 3.5rem !important;       /* Feste, saubere Höhe für die Leiste */
+      height: 3.5rem !important;
       background-color: #ffffff !important;
       border-bottom: 1px solid #eeeeee !important;
       padding: 0 !important;
       margin: 0 !important;
+      z-index: 10 !important;
     }
 
-    /* Der Startseiten-Link wird unsichtbar über die GANZE Kopfzeile gezogen */
+    /* Riesen-Link für die Rückkehr zur Startseite */
     .site-title {
       position: absolute !important;
       top: 0 !important;
       left: 0 !important;
       width: 100% !important;
       height: 100% !important;
-      z-index: 9999 !important;        /* Liegt ganz oben und fängt jeden Klick ab */
-      font-size: 0 !important;         /* Killt den Text "Die sprechenden Steine..." */
+      z-index: 9999 !important;
+      font-size: 0 !important;
       color: transparent !important;
-      text-indent: -9999px !important; /* Ausfallsicherung für Text-Verstecken */
+      text-indent: -9999px !important;
       background: transparent !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
-    /* Das Burger-Symbol (wird rein optisch oben rechts platziert) */
-    #menu-button {
-      display: block !important;       /* Sichtbar auf Handy UND PC */
+    /* Das Burger-Menü-Symbol rechts erzwingen */
+    #menu-button, .site-button {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
       position: absolute !important;
       top: 50% !important;
       right: 1.5rem !important;
       transform: translateY(-50%) !important;
-      z-index: 5 !important;           /* Liegt unter dem unsichtbaren Riesen-Link */
-      pointer-events: none !important; /* Klicks fallen durch auf .site-title */
-      
-      /* Absolute Farb-Fixierung (Keine visuelle Reaktion bei Interaktion) */
+      width: 3rem !important;
+      height: 3rem !important;
+      z-index: 5 !important;
+      pointer-events: none !important;
       color: #333333 !important;
       background: transparent !important;
       background-color: transparent !important;
+      border: none !important;
       box-shadow: none !important;
     }
 
-    /* Schutz der SVG-Grafik des Burgers vor Farbänderungen (Hover/Active) */
-    #menu-button svg, 
-    #menu-button svg path {
+    /* SVG-Icon stur einfärben und sichtbar machen */
+    #menu-button svg, .site-button svg {
+      display: block !important;
+      width: 1.5rem !important;
+      height: 1.5rem !important;
       fill: #333333 !important;
       stroke: #333333 !important;
     }
 
-    /* Aggressiver Reset für Hover-, Focus- und Active-Zustände */
+    /* Hover-Effekte blockieren */
     #menu-button:hover, #menu-button:active, #menu-button:focus,
-    #menu-button:hover svg, #menu-button:active svg {
-      color: #333333 !important;
+    .site-button:hover, .site-button:active, .site-button:focus {
       background: transparent !important;
       background-color: transparent !important;
-      fill: #333333 !important;
-      stroke: #333333 !important;
     }
 
-    /* Verhindert das unschöne blaue Flashen beim Tippen auf Smartphones */
-    .site-header, .site-title, #menu-button {
+    /* Tap-Highlight-Schutz */
+    .site-header, .site-title, #menu-button, .site-button {
       -webkit-tap-highlight-color: transparent !important;
     }
 
