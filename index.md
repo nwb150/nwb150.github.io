@@ -6,7 +6,6 @@ Scanne die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal 
 Nachfolgend findest du die Gesamtübersicht:
 
 <!-- SOLDIER_LIST_START -->
-* [.github](./.github/)
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
 * [Erich Goercke](./goercke-erich/)
