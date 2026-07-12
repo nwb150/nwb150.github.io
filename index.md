@@ -38,6 +38,9 @@ Nachfolgend findest du die Gesamtübersicht:
 * [Walter Schoenfeld](./schoenfeld-walter/)
 * [Bruno Staude](./staude-bruno/)
 * [Heinrich Stroeh](./stroeh-heinrich/)
+
 <!-- SOLDIER_LIST_END -->
----
+
+<hr>
+
 [Impressum & Datenschutz](impressum.html)

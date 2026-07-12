@@ -19,7 +19,7 @@ if os.path.exists(target_file):
     if start_marker in content and end_marker in content:
         # Perfekt: Marker existieren bereits. Wir isolieren Kopf und Fuß.
         header_text = content.split(start_marker)[0].strip() + "\n\n" + start_marker + "\n"
-        footer_text = "\n" + end_marker + "\n" + content.split(end_marker)[1].strip() + "\n"
+        footer_text = "\n\n" + end_marker + "\n\n" + content.split(end_marker)[1].strip() + "\n"
     else:
         # Erster Durchlauf: Wir trennen den Text vor dem ersten Bullet-Point
         lines = content.splitlines()
@@ -30,7 +30,7 @@ if os.path.exists(target_file):
             header_lines.append(line)
         
         header_text = "\n".join(header_lines).strip() + "\n\n" + start_marker + "\n"
-        footer_text = "\n" + end_marker + "\n"
+        footer_text = "\n\n" + end_marker + "\n\n"
 else:
     # Absoluter Notfall-Fallback, falls die Datei komplett fehlen sollte
     header_text = f"""# Die sprechenden Steine von Neuwittenbek
@@ -40,12 +40,12 @@ Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schic
 
 {start_marker}
 """
-    footer_text = f"\n{end_marker}\n"
+    footer_text = f"\n\n{end_marker}\n\n"
 
 print("Lese bestehende index.md ein und schütze manuelle Texte...")
 
-# --- NEU: Impressum-Link am Ende des Footers sicherstellen ---
-impressum_text = "\n\n---\n[Impressum & Datenschutz](impressum.html)\n"
+# --- NEU: Impressum-Link mit kugelsicherem HTML-Trennstrich ---
+impressum_text = "\n\n<hr>\n\n[Impressum & Datenschutz](impressum.html)\n"
 if "[Impressum & Datenschutz]" not in footer_text:
     footer_text = footer_text.rstrip() + impressum_text
 # -----------------------------------------------------------
