@@ -44,6 +44,12 @@ Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schic
 
 print("Lese bestehende index.md ein und schütze manuelle Texte...")
 
+# --- NEU: Impressum-Link am Ende des Footers sicherstellen ---
+impressum_text = "\n\n---\n[Impressum & Datenschutz](impressum.html)\n"
+if "[Impressum & Datenschutz]" not in footer_text:
+    footer_text = footer_text.rstrip() + impressum_text
+# -----------------------------------------------------------
+
 # 2. Alle Verzeichnisse auflisten und sortieren
 folders = sorted(os.listdir("."))
 markdown_links = []

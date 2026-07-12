@@ -40,3 +40,5 @@ Nachfolgend findest du die Gesamtübersicht:
 * [Heinrich Stroeh](./stroeh-heinrich/)
 <!-- SOLDIER_LIST_END -->
 
+---
+[Impressum & Datenschutz](impressum.html)
