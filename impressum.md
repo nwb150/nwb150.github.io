@@ -6,7 +6,7 @@ nav_order: 99
 
 # Impressum
 
-## Angaben gemäß § 5 TMG:
+## Angaben gemäß § 5 TMG (Seitenbetreiber & technische Pflege):
 Jens Weitkamp
 Hofkoppelweg 12
 24214 Neuwittenbek
@@ -14,9 +14,9 @@ Hofkoppelweg 12
 ## Kontakt:
 E-Mail: jensweitkamp@gmail.com
 
-## Verantwortlich für den redaktionellen Inhalt:
-Jens Weitkamp
-Hofkoppelweg 12
+## Verantwortlich für den redaktionellen Inhalt (Historische Recherche & Texte):
+Monika Weitkamp
+Imbrook 8
 24214 Neuwittenbek
 
 ---

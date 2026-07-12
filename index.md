@@ -39,6 +39,5 @@ Nachfolgend findest du die Gesamtübersicht:
 * [Bruno Staude](./staude-bruno/)
 * [Heinrich Stroeh](./stroeh-heinrich/)
 <!-- SOLDIER_LIST_END -->
-
 ---
 [Impressum & Datenschutz](impressum.html)
