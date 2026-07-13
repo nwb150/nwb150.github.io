@@ -8,11 +8,11 @@ ignored_folders = {".git", ".venv", "qrcodes", "import_text", "__pycache__", "Bi
 start_marker = "<!-- SOLDIER_LIST_START -->"
 end_marker = "<!-- SOLDIER_LIST_END -->"
 
-# 1. Existierenden Text einlesen und Text deiner Mutter schützen
+# 1. Existierenden Text einlesen und manuelle Texte schützen
 header_text = ""
 footer_text = ""
 
-if os.path.exists(target_file):
+if os.path.exists(target_file) and os.path.getsize(target_file) > 0:
     with open(target_file, "r", encoding="utf-8") as f:
         content = f.read()
     
@@ -32,21 +32,27 @@ if os.path.exists(target_file):
         header_text = "\n".join(header_lines).strip() + "\n\n" + start_marker + "\n"
         footer_text = "\n\n" + end_marker + "\n\n"
 else:
-    # Absoluter Notfall-Fallback, falls die Datei komplett fehlen sollte
+    # Absoluter Notfall-Fallback mit dem aktuellen Plakat-Text
     header_text = f"""# Die sprechenden Steine von Neuwittenbek
-### 150 Jahre Dorfjubiläum • Gedenkprojekt
+### 150 Jahre Geschichte • Erinnerung lebendig halten
 
-Scannen Sie die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal der unserer getöteten Nachbarn, Väter, Brüder und Söhne und Ehemänner zu erfahren. Nachfolgend finden Sie die Gesamtübersicht:
+Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Schicksale vieler Generationen. Dieses Projekt bringt die Gedenksteine Neuwittenbeks zum Sprechen. Es lädt dich dazu ein, innezuhalten und etwas mehr über das Leben, das Wirken und die Schicksale unserer ehemaligen Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren, die durch die Kriege aus unserer Mitte gerissen wurden.
+
+### Digitale Gesamtübersicht der Biografien:
 
 {start_marker}
 """
-    footer_text = f"\n\n{end_marker}\n\n"
+    footer_text = f"""\n\n{end_marker}
+
+## Erinnerungen lebendig halten – Macht mit!
+Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von Frau Tams. Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
+"""
 
 print("Lese bestehende index.md ein und schütze manuelle Texte...")
 
-# --- NEU: Impressum-Link mit kugelsicherem HTML-Trennstrich ---
-impressum_text = "\n\n<hr>\n\n[Impressum & Datenschutz](impressum.html)\n"
-if "[Impressum & Datenschutz]" not in footer_text:
+# --- NEU: Impressum-Link und Open-Source Hinweis mit kugelsicherem HTML-Trennstrich ---
+impressum_text = "\n\n<hr>\n\n<p>Ein rein ehrenamtliches, nicht-kommerzielles Open-Source-Projekt der Gemeinde Neuwittenbek.</p>\n<p><a href=\"impressum.html\">Impressum & Datenschutz</a></p>\n"
+if "Ein rein ehrenamtliches" not in footer_text:
     footer_text = footer_text.rstrip() + impressum_text
 # -----------------------------------------------------------
 

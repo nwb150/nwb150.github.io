@@ -19,6 +19,9 @@ Monika Weitkamp
 Imbrook 8
 24214 Neuwittenbek
 
+## Kontakt:
+E-Mail: moni.weitkamp@gmail.com
+
 ---
 
 # Datenschutzerklärung

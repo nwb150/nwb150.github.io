@@ -1,9 +1,9 @@
 # Die sprechenden Steine von Neuwittenbek
-### 150 Jahre Dorfjubiläum • Gedenkprojekt
+### 150 Jahre Geschichte • Erinnerung lebendig halten
 
-Scanne die QR-Codes an den Gedenksteinen, um mehr über das Leben und Schicksal unserer getöteten Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren. 
+Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Schicksale vieler Generationen. Dieses Projekt bringt die Gedenksteine Neuwittenbeks zum Sprechen. Es lädt dich dazu ein, innezuhalten und etwas mehr über das Leben, das Wirken und die Schicksale unserer ehemaligen Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren, die durch die Kriege aus unserer Mitte gerissen wurden.
 
-Nachfolgend findest du die Gesamtübersicht:
+### Digitale Gesamtübersicht der Biografien:
 
 <!-- SOLDIER_LIST_START -->
 * [Friedrich Bast](./bast-friedrich/)
@@ -41,6 +41,10 @@ Nachfolgend findest du die Gesamtübersicht:
 
 <!-- SOLDIER_LIST_END -->
 
+## Erinnerungen lebendig halten – Macht mit!
+Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von Frau Tams. Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
+
 <hr>
 
-[Impressum & Datenschutz](impressum.html)
+<p>Ein rein ehrenamtliches, nicht-kommerzielles Open-Source-Projekt der Gemeinde Neuwittenbek.</p>
+<p><a href="impressum.html">Impressum & Datenschutz</a></p>
