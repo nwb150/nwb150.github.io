@@ -1,7 +1,7 @@
 # Die sprechenden Steine von Neuwittenbek
 ### 150 Jahre Geschichte • Erinnerung lebendig halten
 
-Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Schicksale vieler Generationen. Dieses Projekt bringt die Gedenksteine Neuwittenbeks zum Sprechen. Es lädt dich dazu ein, innezuhalten und etwas mehr über das Leben, das Wirken und die Schicksale unserer ehemaligen Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren, die durch die Kriege aus unserer Mitte gerissen wurden.
+Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Schicksale vieler Generationen. Dieses Projekt bringt die Gedenksteine Neuwittenbeks zum Sprechen. Es lädt dich ein, innezuhalten und etwas mehr über das Leben, das Wirken und die Schicksale unserer ehemaligen Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren, die durch die Kriege aus unserer Mitte gerissen wurden.
 
 ### Digitale Gesamtübersicht der Biografien:
 
