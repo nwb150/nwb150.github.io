@@ -8,6 +8,8 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 <!-- SOLDIER_LIST_START -->
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
+* [Alfred Galinsky](./galinsky-alfred/)
+* [Max Galinsky](./galinsky-max/)
 * [Erich Goercke](./goercke-erich/)
 * [Max Gosch](./gosch-max/)
 * [Hans Grotkopp](./grotkopp-hans/)
@@ -35,6 +37,7 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 * [Otto Radbruch](./radbruch-otto/)
 * [Peter Radbruch](./radbruch-peter/)
 * [Heinz Schloesser](./schloesser-heinz/)
+* [Walter Schneider](./schneider-walter/)
 * [Walter Schoenfeld](./schoenfeld-walter/)
 * [Bruno Staude](./staude-bruno/)
 * [Heinrich Stroeh](./stroeh-heinrich/)
