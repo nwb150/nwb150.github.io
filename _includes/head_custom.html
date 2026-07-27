@@ -1,112 +1,56 @@
+{% if page.url != "/" and page.url != "/index.html" %}
 <style>
-  /* --- GLOBALE GRUNDLAGEN (Gelten für PC und Handy) --- */
-  .site-footer { display: none !important; }
-  .site-nav { display: none !important; } /* Die Navigationsliste brauchen wir nirgends */
+  /* Burgermenü oben rechts auf Unterseiten ausblenden */
+  #site-nav-toggle, 
+  .site-header-toggle, 
+  .nav-trigger {
+    display: none !important;
+  }
 
-  /* --- DYNAMISCHE WEICHE ÜBER JEKYLL LIQUID --- */
-  {% if page.url == "/" or page.url == "/index.html" %}
-    
-    /* ==========================================================
-       1. ÜBERSICHTSSEITE (Startseite)
-       Keine Kopfzeile, kein Menü - nur der nackte Inhalt.
-       ========================================================== */
-    .side-bar { display: none !important; }
-    
-    @media (min-width: 50rem) {
-      .main { margin-left: 0 !important; }
-      .main-content { max-width: 52rem !important; margin: 0 auto !important; }
-    }
+  /* Geschwungenen Zurück-Pfeil oben rechts platzieren */
+  .back-arrow-header {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: #4a4542; /* Dezent dunkler Schieferton */
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    z-index: 1000;
+  }
 
-  {% else %}
+  .back-arrow-header:hover {
+    color: #111111;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
 
-    /* ==========================================================
-       2. EINZELSEITEN (Soldaten)
-       Kopfzeile oben im Mobile-Look, erzwungen auch auf dem PC.
-       ========================================================== */
-    
-    /* PC-Layout der Seitenleiste knacken und in eine Top-Bar umwandeln */
-    @media (min-width: 50rem) {
-      .side-bar {
-        width: 100% !important;
-        height: auto !important;
-        position: relative !important;
-        display: block !important;
-        border-right: none !important;
-        background: transparent !important;
-      }
-      .main { margin-left: 0 !important; }
-      .main-content { max-width: 52rem !important; margin: 0 auto !important; }
-    }
-
-    /* Kopfzeile exakt definieren (wirkt auf PC + Handy) */
-    .site-header {
-      display: block !important;
-      position: relative !important;
-      width: 100% !important;
-      height: 3.5rem !important;
-      background-color: #ffffff !important;
-      border-bottom: 1px solid #eeeeee !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      z-index: 10 !important;
-    }
-
-    /* Riesen-Link für die Rückkehr zur Startseite */
-    .site-title {
-      position: absolute !important;
-      top: 0 !important;
-      left: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      z-index: 9999 !important;
-      font-size: 0 !important;
-      color: transparent !important;
-      text-indent: -9999px !important;
-      background: transparent !important;
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-
-    /* Das Burger-Menü-Symbol rechts erzwingen */
-    #menu-button, .site-button {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      position: absolute !important;
-      top: 50% !important;
-      right: 1.5rem !important;
-      transform: translateY(-50%) !important;
-      width: 3rem !important;
-      height: 3rem !important;
-      z-index: 5 !important;
-      pointer-events: none !important;
-      color: #333333 !important;
-      background: transparent !important;
-      background-color: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-    }
-
-    /* SVG-Icon stur einfärben und sichtbar machen */
-    #menu-button svg, .site-button svg {
-      display: block !important;
-      width: 1.5rem !important;
-      height: 1.5rem !important;
-      fill: #333333 !important;
-      stroke: #333333 !important;
-    }
-
-    /* Hover-Effekte blockieren */
-    #menu-button:hover, #menu-button:active, #menu-button:focus,
-    .site-button:hover, .site-button:active, .site-button:focus {
-      background: transparent !important;
-      background-color: transparent !important;
-    }
-
-    /* Tap-Highlight-Schutz */
-    .site-header, .site-title, #menu-button, .site-button {
-      -webkit-tap-highlight-color: transparent !important;
-    }
-
-  {% endif %}
+  .back-arrow-header svg {
+    width: 22px;
+    height: 22px;
+  }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector('.site-header');
+    if (header && !document.querySelector('.back-arrow-header')) {
+      var backLink = document.createElement('a');
+      backLink.href = "{{ '/' | relative_url }}";
+      backLink.className = 'back-arrow-header';
+      backLink.title = 'Zurück zur Hauptübersicht';
+      backLink.setAttribute('aria-label', 'Zurück zur Hauptübersicht');
+      backLink.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+        </svg>
+      `;
+      header.appendChild(backLink);
+    }
+  });
+</script>
+{% endif %}
