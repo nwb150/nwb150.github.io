@@ -12,13 +12,13 @@ Hinrich Popp ist am 24.06.1914 gefallen.
 
 ![Hinrich Popp](hinrich-popp-3.jpg)
 
+![Hinrich Popp](hinrich-popp-5.jpg)
+
 ![Hinrich Popp](hinrich-popp-4.jpg)
 
 ![Hinrich Popp](hinrich-popp-1.jpg)
 
 ![Hinrich Popp](hinrich-popp-2.jpg)
-
-![Hinrich Popp](hinrich-popp-5.jpg)
 
 ![Hinrich Popp](hinrich-popp-6.jpg)
 
