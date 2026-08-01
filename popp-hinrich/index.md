@@ -17,3 +17,5 @@ Hinrich Popp wurde am 3. April 1896 geboren. Seine Eltern sind Carl Hinrich Popp
 
 ![Hinrich Popp](hinrich-popp-5.jpg)
 
+![Hinrich Popp](hinrich-popp-6.jpg)
+
