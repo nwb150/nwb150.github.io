@@ -6,8 +6,6 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 ### Digitale Gesamtübersicht der Biografien:
 
 <!-- SOLDIER_LIST_START -->
-* [.bundle](./.bundle/)
-* [_site](./_site/)
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
 * [Alfred Galinsky](./galinsky-alfred/)
@@ -43,7 +41,6 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 * [Walter Schoenfeld](./schoenfeld-walter/)
 * [Bruno Staude](./staude-bruno/)
 * [Heinrich Stroeh](./stroeh-heinrich/)
-* [Vendor](./vendor/)
 
 <!-- SOLDIER_LIST_END -->
 
