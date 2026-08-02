@@ -2,7 +2,11 @@ import os
 
 # Konfiguration
 target_file = "index.md"
-ignored_folders = {".git", ".venv", "qrcodes", "import_text", "__pycache__", "Bilder", "_includes", ".github"}
+ignored_folders = {
+    ".git", ".venv", ".bundle", ".github",
+    "_includes", "_site", "__pycache__",
+    "Bilder", "qrcodes", "import_text", "vendor"
+}
 
 # Marker für den dynamischen Bereich
 start_marker = "<!-- SOLDIER_LIST_START -->"

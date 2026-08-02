@@ -7,7 +7,7 @@ nav_exclude: true
 
 Hinrich Popp wurde am 3. April 1896 geboren. Seine Eltern sind Carl Hinrich Popp und Elisabeth Christine Jöhnk, getraut am 18.07.1893 in Gettorf.
 
-Hinrich Popp ist am 24.06.1914 gefallen.
+Hinrich Popp ist am 24.06.1916 gefallen.
 
 
 ![Hinrich Popp](hinrich-popp-3.jpg)

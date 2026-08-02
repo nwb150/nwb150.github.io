@@ -8,6 +8,8 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 <!-- SOLDIER_LIST_START -->
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
+* [Erwin Behrend](./behrend-erwin/)
+* [Arthur Frohreich](./frohreich-arthur/)
 * [Alfred Galinsky](./galinsky-alfred/)
 * [Max Galinsky](./galinsky-max/)
 * [Erich Goercke](./goercke-erich/)
