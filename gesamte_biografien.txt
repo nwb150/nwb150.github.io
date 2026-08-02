@@ -1,0 +1,618 @@
+============================================================
+DATEI: index.md
+============================================================
+
+# Die sprechenden Steine von Neuwittenbek
+### 150 Jahre Geschichte • Erinnerung lebendig halten
+
+Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Schicksale vieler Generationen. Dieses Projekt bringt die Gedenksteine Neuwittenbeks zum Sprechen. Es lädt dich ein, innezuhalten und etwas mehr über das Leben, das Wirken und die Schicksale unserer ehemaligen Nachbarn, Väter, Brüder, Söhne und Ehemänner zu erfahren, die durch die Kriege aus unserer Mitte gerissen wurden.
+
+### Digitale Gesamtübersicht der Biografien:
+
+<!-- SOLDIER_LIST_START -->
+* [Friedrich Bast](./bast-friedrich/)
+* [Walter Bast](./bast-walter/)
+* [Alfred Galinsky](./galinsky-alfred/)
+* [Max Galinsky](./galinsky-max/)
+* [Erich Goercke](./goercke-erich/)
+* [Max Gosch](./gosch-max/)
+* [Hans Grotkopp](./grotkopp-hans/)
+* [Kurt Hansen](./hansen-kurt/)
+* [Helmut Hass](./hass-helmut/)
+* [Johannes Hass](./hass-johannes/)
+* [Hans Detlef Hoelk](./hoelk-hans-detlef/)
+* [Erich Huelle](./huelle-erich/)
+* [Alfred Jensen](./jensen-alfred/)
+* [Otto Joehnk](./joehnk-otto/)
+* [Robert Joehnk](./joehnk-robert/)
+* [Willy Joehnk](./joehnk-willy/)
+* [Wilhelm Johst](./johst-wilhelm/)
+* [Kurt Klein](./klein-kurt/)
+* [Fritz Kuest](./kuest-Fritz/)
+* [Friedrich Marxen](./marxen-friedrich/)
+* [Johannes Marxen](./marxen-johannes/)
+* [Hans Paetow](./paetow-hans/)
+* [Fritz Petersen](./petersen-fritz/)
+* [Heinz Petersen](./petersen-heinz/)
+* [Bernhard Pfahl](./pfahl-bernhard/)
+* [Heinz Pohl](./pohl-heinz/)
+* [Hinrich Popp](./popp-hinrich/)
+* [Willi Qualen](./qualen-willi/)
+* [Otto Radbruch](./radbruch-otto/)
+* [Peter Radbruch](./radbruch-peter/)
+* [Heinz Schloesser](./schloesser-heinz/)
+* [Walter Schneider](./schneider-walter/)
+* [Walter Schoenfeld](./schoenfeld-walter/)
+* [Bruno Staude](./staude-bruno/)
+* [Heinrich Stroeh](./stroeh-heinrich/)
+
+<!-- SOLDIER_LIST_END -->
+
+## Erinnerungen lebendig halten – Macht mit!
+Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von Frau Tams. Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
+
+<hr>
+
+<p>Ein rein ehrenamtliches, nicht-kommerzielles Open-Source-Projekt der Gemeinde Neuwittenbek.</p>
+<p><a href="impressum.html">Impressum & Datenschutz</a></p>
+
+
+============================================================
+DATEI: hass-helmut/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Helmut Hass
+
+Helmut Hass und Johannes Hass waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
+
+
+Helmut Hass ist am 23.08.1944 in Russland gefallen.
+
+
+============================================================
+DATEI: jensen-alfred/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Alfred Jensen
+
+
+Alfred Jensen war ein Bruder von Detlef Jensen und ein Onkel des jetzigen Alfes Jensen.
+
+
+Alfred Jensen ist einen Tag vor Heiligabend am 23.12.1943 in Italien gefallen.
+
+
+============================================================
+DATEI: marxen-friedrich/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Friedrich Marxen 
+
+Friedrich Marxen ist am 02.07.1944 in Italien gefallen.
+
+
+
+============================================================
+DATEI: popp-hinrich/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Hinrich Popp
+
+
+Hinrich Popp wurde am 3. April 1896 geboren. Seine Eltern sind Carl Hinrich Popp und Elisabeth Christine Jöhnk, getraut am 18.07.1893 in Gettorf.
+
+Hinrich Popp ist am 24.06.1914 gefallen.
+
+
+![Hinrich Popp](hinrich-popp-3.jpg)
+
+![Hinrich Popp](hinrich-popp-5.jpg)
+
+![Hinrich Popp](hinrich-popp-4.jpg)
+
+![Hinrich Popp](hinrich-popp-1.jpg)
+
+![Hinrich Popp](hinrich-popp-6.jpg)
+
+![Hinrich Popp](hinrich-popp-2.jpg)
+
+
+
+============================================================
+DATEI: schloesser-heinz/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Heinz Schlösser 
+
+Die Eltern von Heinz Schlösser wohnten am Kanal in Levensau.  Von ihnen hat Käthe Schröder Gössel geholt.
+
+Heinz Schlösser blieb am 12.10.1940 auf See.
+
+
+============================================================
+DATEI: huelle-erich/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Erich Hülle
+
+Erich Hülle war ein Bruder von Walter Hülle und Onkel von Norbert Hülle 
+
+Erich Hülle ist am 13.02.1942 in Russland gefallen.
+
+
+============================================================
+DATEI: galinsky-alfred/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Alfred Galinsky
+
+
+
+Alfred und Max Galinsky wurden beide als in Russland vermisst gemeldet, Alfred 1943 und Max 1945.  Sie waren Thea Galinskys Schwager und Schwiegervater.
+
+
+
+============================================================
+DATEI: staude-bruno/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Bruno Staude
+
+Bruno Staude war der einzige Sohn von Lisbeth Staude.  Sie wohnten in der Dorfstraße, das Haus ist im Krieg abgebrannt. Heute steht auf dem Grundstück das Haus von Fiedler.  Seine Mutter wohnte lange Jahre bei Seiferts in der Bahnhofstraße.
+
+Bruno Staude ist am 08.02.1942 in Russland gefallen.
+
+
+============================================================
+DATEI: paetow-hans/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Hans Paetow
+
+
+Hans Paetows Vater war Verwalter auf Warleberg und er dessen einziger Sohn.
+
+
+Hans Paetow wird seit 1944 in Russland vermisst.
+
+
+![Hans-Paetow](hans-paetow-1.jpg)
+
+
+Das Foto zeigt ihn mit seinen Eltern vor deren Haus in Gettorf (gegenüber Kunze).
+
+
+![Hans-Paetow](hans-paetow-2.jpg)
+
+
+============================================================
+DATEI: joehnk-willy/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Willy Jöhnk
+Willy Jöhnk war der jüngere Bruder von Johann Jöhnk (Sandkuhle) und mit Hildegard aus Kaiserslautern verheiratet.  Sie hatten einen Sohn: Ralf. Willy Jöhnk war Elektriker.
+
+
+Willy Jöhnk wird seit dem 21.01.1945 in Polen vermisst.
+
+
+============================================================
+DATEI: pohl-heinz/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Heinz Pohl
+Heinz Pohl war mit Erna Pohl, geb. Berger verheirattet.  Auf der Flucht wurde ihre Tochter Rosemarie geboren.  Mutter und Baby waren erst auf dem Hof Neuwittenbek untergebracht, dann bei Familie Kaiser im Bölskamp, später in Kiel.
+
+Heinz Pohl ist am 10.02.1947 in Rußland gefallen.
+
+
+
+
+
+============================================================
+DATEI: schoenfeld-walter/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Walter Schönfeld 
+
+Walter Schönfelds Eltern wohnten im Altenteilhaus von Heinrich Grotkopp.
+Margrit Schloots (Bahnhofstraße) ist seine Nichte.
+
+Walter Schönfeld starb am 11.05.1941 in Hannover.
+
+
+============================================================
+DATEI: qualen-willi/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Willi Qualen
+
+Willi Qualen ist am 06.12.1943 in Russland gefallen.  Mit seiner Frau Anni (später Jungjohann) hatte er drei Töchter: Magda (später Magda Medzich), Gerda und Irma.
+
+============================================================
+DATEI: bast-walter/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Walter Bast 
+
+Walter und Friedrich Bast waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war Albert Bast gut versorgt und hat dort mitgearbeitet.
+
+Walter Bast ist am 13.05.1940 in Frankreich gefallen.
+
+
+============================================================
+DATEI: joehnk-robert/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Robert Jöhnk
+
+Robert Jöhnk war der jüngere Bruder von Johann Jöhnk und ein Neffe von Otto Jöhnk (Berg).
+
+
+Robert Jöhnk ist am 22.12.1941 in Russland gefallen.
+
+
+============================================================
+DATEI: radbruch-peter/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Peter Radbruch 
+Im zivilen Leben vor dem Krieg war Peter Radbruch Bauingenieur.
+
+Peter Radbruch ist sechs Wochen nach Kriegsende am 23.06.1945 beim Minenräumen umgekommen.
+
+
+============================================================
+DATEI: gosch-max/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Max Gosch
+
+Max Gosch war Lehrer in Neuwittenbek. Mit seiner Frau Marie, geb. Brammer, hatte er eine Tochter, Karin.  Die Familie lebte auf Hof Brammer.
+
+
+Max Gosch ist am 9.02.1945 im Krankenhaus von Halberstadt gestorben.
+
+
+============================================================
+DATEI: schneider-walter/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Walter Schneider
+
+
+Walter Schneider lebte mit seiner Frau und den drei Töchtern (die jüngste ist Lisbeth Stein) in Ostpreußen, den nördlichen Masuren. Beruflich war er Tiefbauarbeiter. Er kam am 22.11.1944 um, seine Familie flüchtete an die Ostseeküste, verpasste dort die "Gustloff".  Sie kamen auf dem Hof Neuwittenbek unter.
+
+![Walter Schneider](walter-schneider-1.png)
+
+
+
+
+
+============================================================
+DATEI: bast-friedrich/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Friedrich Bast 
+
+Friedrich und Walter Bast waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war er gut versorgt und hat dort mitgearbeitet.
+
+Friedrich Bast ist am 23.12.1941 in Russland gefallen. 
+
+
+============================================================
+DATEI: johst-wilhelm/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Wilhelm Johst
+Wilhelm Johst wurde am 12.10.1914 als Sohn von Ella und dem Schmiedemeister August Jost geboren.  Seit 1913 sind sie die Pächter der Gutsschmiede in Warleberg. Wilhelm machte eine Ausbildung zum Schornsteinfeger und war als Geselle in Garding angestellt. Er lernte Lisbeth Lühr kennen und heiratete sie im Frühjahr 1939, mit Karl-August war Nachwuchs unterwegs.  Gleich zu Kriegsbeginn eingezogen, kehrte er nur einmal auf Heimaturlaub zurück und lernte seinen Sohn kennen.
+
+
+Kurz darauf fiel Wilhelm Johst am 24.05.1940 in Belgien.  Bestattet wurde er in Lommel.
+
+
+============================================================
+DATEI: radbruch-otto/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Otto Radbruch 
+Vor dem Krieg arbeitete Otto Radbruch in einer Schlachterei in Hamburg. 
+
+Otto Radbruch kam nicht wieder zurück nach Hause, er ist am 18.02.1945 in Russland verhungert.
+
+
+============================================================
+DATEI: hass-johannes/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Johannes Hass
+
+Johannes Hass und Helmut Hass waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
+
+
+Johannes Hass wird seit 1945 in Westpreußen vermisst. 
+
+
+============================================================
+DATEI: petersen-fritz/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Fritz Petersen 
+
+Fritz Petersen ist im Oktober 1945 in Russland gefallen, sein Bruder Heinz am 6. Februar des selben Jahres in Ostpreußen.
+
+
+============================================================
+DATEI: pfahl-bernhard/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Bernhard Pfahl 
+Bernhard Pfahl war der Sohn von Frisör Pfahl, die Eltern  wohnten zuerst in zwei Bauwagen mit Friseurbetrieb auf dem Grundstück (heute Stach).  Später Neubau im Bölskamp, Familie Schneider/Stein wohnte oben.
+
+Bernhard Pfahl wird seit 1945 in Pommern vermisst.
+
+
+============================================================
+DATEI: galinsky-max/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Max Galinsky
+
+
+
+Max und Alfred Galinsky wurden beide als in Russland vermisst gemeldet, Alfred 1943 und Max 1945.  Sie waren Thea Galinskys Schwager und Schwiegervater.
+
+
+
+============================================================
+DATEI: grotkopp-hans/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Hans Grotkopp
+
+Hans Grotkopp war ein Bruder von Mariechen Jensen aus dem Bölskamp.
+
+
+Hans Grotkopp wird seit dem 12.07.1944 in Russland vermisst.
+
+
+============================================================
+DATEI: kuest-fritz/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Fritz Küst
+
+Fritz Küst ist am 25.04.1945 in Bayern gefallen.
+
+
+
+============================================================
+DATEI: marxen-johannes/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Johannes Marxen 
+
+Johannes Marxen war ein Bruder von Hertha Kaiser.  Sie wohnten auf dem “Hauf” im Gettorfer Weg.  Wolfgang Kaiser ist sein Neffe.
+
+Johannes Marxen ist am 14.09.1942 in Russland gefallen.
+
+
+============================================================
+DATEI: klein-kurt/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Kurt Klein 
+Die Kleins wohnten in dem Baasch Altenteil, dem kleinsten Haus an der Hauptstraße in Altwittenbek.
+
+
+Kurt Klein wird seit dem 27.02.1945 in Ostpreußen vermisst.
+
+
+============================================================
+DATEI: petersen-heinz/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Heinz Petersen 
+
+Heinz Petersens Bruder Fritz ist im Oktober des selben Jahres in Russland gefallen.
+
+
+Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
+
+
+============================================================
+DATEI: goercke-erich/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Erich Görke
+Erich Görke ist ein Schwager zu Hans Detlef Hölk, verheiratet mit Marga, geborene Hölk.  Das Paar hatte drei Kinder: Elke, Hans-Richard und Erich.
+
+Erich Görke ist kurz vor Kriegsende am 11.04.1945 in Russland gestorben. 
+
+
+============================================================
+DATEI: hoelk-hans-detlef/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Hans Detlef Hölk
+
+Hans Detlef Hölk vom Hof Neuwittenbek. Seine Frau Frida hat später einen Hus geheiratet.  Das Paar hat nach Kriegsende viele Flüchtlinge aufgenommen, die zum Teil auch heute noch in Neuwittenbek wohnen.
+
+Hans Detlef Hölk ist am 06.01.1942 in Russland gefallen.
+
+
+============================================================
+DATEI: stroeh-heinrich/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Heinrich Ströh
+
+Heinrich Ströh war Sattlermeister.
+
+
+Heinrich Ströh wurde mit Tuberkulose entlassen und starb am 16.11.1951 an den Kriegsfolgen. 
+
+
+============================================================
+DATEI: hansen-kurt/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Kurt Hansen
+
+Der Vater von Kurt Hansen, Christian Hansen war später Lehrer in Neuwittenbek.  Gewohnt hat er im Bölskamp.
+
+Kurt Hansen wird seit 1944 in Russland vermisst. 
+
+
+============================================================
+DATEI: joehnk-otto/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Otto Jöhnk
+
+Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (Petersen) und Elsbeth.  Er war Landwirt.
+
+
+Otto Jöhnk ist am 14.01.1944 in Nikopol in Russland gefallen.
+
+
