@@ -1,0 +1,172 @@
+Hier ist eine Übersicht aller Befehle für dein Projekt **„Die sprechenden Steine von Neuwittenbek“**.
+
+Öffne vor der Ausführung immer das Terminal in deinem Projektordner (oder navigiere mit `cd ~/Pfad/zum/Ordner` dorthin).
+
+---
+
+## 1. Die Projekt-Skripte (Wann nutzt du was?)
+
+### 🔄 Startseite / Index aktualisieren
+
+**Befehl:**
+
+```bash
+python3 generate_index.py
+
+```
+
+* **Wann nutzen?** Immer wenn du **neue Ordner für Soldaten angelegt**, Ordner umbenannt oder gelöscht hast.
+* **Was macht es?** Liest die Ordnerstruktur ein und baut die Links auf deiner Startseite (`index.md`) automatisch neu auf (zwischen `<!-- SOLDIER_LIST_START -->` und `<!-- SOLDIER_LIST_END -->`).
+
+---
+
+### 📝 Eintrags-Seiten & Texte verarbeiten
+
+**Befehle:**
+
+```bash
+python3 generate_entries.py
+
+```
+
+```bash
+python3 import_texts.py
+
+```
+
+* **Wann nutzen?** Wenn du neue Datensätze/Rohtexte vorliegen hast und daraus automatisch die Ordnerstrukturen und `index.md`-Dateien für einzelne Personen generieren oder importieren möchtest.
+
+---
+
+### 🖼️ Bilder optimieren
+
+**Befehl:**
+
+```bash
+./optimize-images.sh
+
+```
+
+*(Falls Rechte fehlen, vorher einmalig `chmod +x optimize-images.sh` eingeben oder `bash optimize-images.sh` nutzen).*
+
+* **Wann nutzen?** Wenn du neue historische Fotos oder Grafiken in das Projekt eingebunden hast.
+* **Was macht es?** Komprimiert die Bilder, damit die Website auf Smartphones vor Ort am Gedenkstein schnell lädt.
+
+---
+
+### 📲 QR-Codes erzeugen
+
+**Befehle:**
+
+```bash
+python3 generate_plakat_qr.py
+
+```
+
+```bash
+python3 generate_rounded_qr.py
+
+```
+
+* **Wann nutzen?** Wenn neue Unterseiten hinzugekommen sind und du die QR-Codes für Drucksachen, Plakate oder Physische Schilder vor Ort neu generieren musst.
+
+---
+
+### 📦 Gesamtexport für Backups / KI
+
+**Befehl:**
+
+```bash
+python3 export_biografien.py
+
+```
+
+* **Wann nutzen?** Wenn du den kompletten Inhalt aller Markdown-Dateien in eine einzelne Textdatei (`gesamte_biografien.txt`) zusammenfassen möchtest.
+
+---
+
+## 2. Der Git-Workflow (Website online stellen)
+
+Damit deine lokalen Änderungen auf **GitHub Pages (`nwb150.github.io`)** live geschaltet werden, nutzt du diesen festen Ablauf:
+
+### Schritt 1: Status prüfen
+
+```bash
+git status
+
+```
+
+* **Wann nutzen?** Vor dem Speichern, um zu sehen, welche Dateien verändert, neu angelegt oder gelöscht wurden (werden rot/grün angezeigt).
+
+---
+
+### Schritt 2: Änderungen vormerken (Staging)
+
+```bash
+git add .
+
+```
+
+* **Wann nutzen?** Um **alle** geänderten Dateien für das nächste Update vorzubereiten.
+* *(Alternativ nur einzelne Dateien hinzufügen: `git add index.md`)*
+
+---
+
+### Schritt 3: Speicherpunkt erstellen (Commit)
+
+```bash
+git commit -m "Querverweise und Beschreibungen aktualisiert"
+
+```
+
+* **Wann nutzen?** Direkt nach `git add .`. Der Text in den Anführungszeichen ist deine kurze Notiz, was geändert wurde.
+
+---
+
+### Schritt 4: Auf GitHub hochladen (Live schalten)
+
+```bash
+git push
+
+```
+
+* **Wann nutzen?** Nach dem Commit. Lädt die Daten zu GitHub hoch. Nach ca. 1–2 Minuten ist die Live-Website aktualisiert.
+
+---
+
+## 3. Typischer Arbeitsablauf (Praxisbeispiel)
+
+Wenn du beispielsweise neue Querverweise in zwei Biografien einpflegst:
+
+1. Textänderungen in den `.md`-Dateien vornehmen und speichern.
+2. *(Falls neue Ordner dazukamen)*:
+```bash
+python3 generate_index.py
+
+```
+
+
+3. Im Terminal das Update auf GitHub hochladen:
+```bash
+git add .
+git commit -m "Querverweise bei Bast und Jöhnk ergänzt"
+git push
+
+```
+
+
+
+---
+
+## Quick-Lookup Spickzettel
+
+| Aufgabe | Befehl |
+| --- | --- |
+| **Startseite aktualisieren** | `python3 generate_index.py` |
+| **Bilder verkleinern** | `./optimize-images.sh` |
+| **QR-Codes erzeugen** | `python3 generate_rounded_qr.py` |
+| **Alles zusammenfassen** | `python3 export_biografien.py` |
+| **Git: Status anzeigen** | `git status` |
+| **Git: Alles zum Upload packen** | `git add .` |
+| **Git: Paket beschriften** | `git commit -m "Deine Nachricht"` |
+| **Git: Live hochladen** | `git push` |
