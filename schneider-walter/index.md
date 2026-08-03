@@ -10,6 +10,8 @@ Walter Schneider lebte mit seiner Frau und den drei Töchtern (die jüngste ist 
 Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 gefallen.
 
 ![Walter Schneider](walter-schneider-1.png)
+![Walter Schneider](walter-schneider-2.png)
+![Walter Schneider](walter-schneider-3.png)
 
 
 
