@@ -18,3 +18,8 @@ Das Foto zeigt ihn mit seinen Eltern vor deren Haus in Gettorf (gegenüber Kunze
 
 
 ![Hans-Paetow](hans-paetow-2.jpg)
+
+
+![Hans-Paetow](hans-paetow-3.jpg)
+
+Hans Paetows Mutter
