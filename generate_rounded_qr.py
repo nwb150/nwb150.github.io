@@ -8,7 +8,11 @@ base_dir = "."  # Aktuelles Verzeichnis
 output_dir = "qrcodes"
 
 # Ordner, für die KEIN QR-Code erzeugt werden soll
-ignored_folders = {".git", ".venv", output_dir, "__pycache__"}
+ignored_folders = {
+    ".git", ".venv", ".bundle", ".github",
+    "_includes", "_site", "__pycache__",
+    "Bilder", "qrcodes", "import_text", "vendor"
+}
 
 os.makedirs(output_dir, exist_ok=True)
 
@@ -26,11 +30,19 @@ count = 0
 for folder in items:
     folder_path = os.path.join(base_dir, folder)
     
-    # Nur echte Ordner verarbeiten, die nicht auf der Ignorierliste stehen
-    if os.path.isdir(folder_path) and folder not in ignored_folders:
+    # Nur Ordner verarbeiten, die:
+    # 1. Nicht auf der Ignorierliste stehen
+    # 2. Nicht mit '.' oder '_' beginnen
+    # 3. Eine 'index.md' enthalten (Soldaten-Unterordner)
+    if (
+        os.path.isdir(folder_path)
+        and folder not in ignored_folders
+        and not folder.startswith(('.', '_'))
+        and os.path.exists(os.path.join(folder_path, "index.md"))
+    ):
         
         # Schönere Namensdarstellung fürs Terminal aus dem Ordnernamen basteln
-        # Beispiel: "marxen-johannes" -> "Johannes Marxen" (Umlaute fehlen im Ordnernamen)
+        # Beispiel: "marxen-johannes" -> "Johannes Marxen"
         parts = folder.split("-")
         if len(parts) >= 2:
             display_name = f"{parts[-1].capitalize()} {' '.join(parts[:-1]).capitalize()}"
