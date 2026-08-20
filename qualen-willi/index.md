@@ -20,5 +20,5 @@ Nach Informationen des Volksbundes befindet sich sein ursprüngliches Grab im Ra
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=50.080489,36.306031&t=&z=8&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=50.080489,36.306031&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
