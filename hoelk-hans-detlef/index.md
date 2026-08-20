@@ -10,9 +10,9 @@ Im Zweiten Weltkrieg diente Hans Detlef Hölk als Unteroffizier. Er fiel am 06.0
 
 ## Kriegsgräberstätte Gontscharnoje
 
-Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsgräberstätte in Gontscharnoje-Sewastopol (Block 3, Reihe 57, Grab 3985), etwa 20 Kilometer außerhalb von Sewastopol.
+Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsgräberstätte in Gontscharnoje-Sewastopol (Block 3, Reihe 57, Grab 3985), etwa 20 Kilometer außerhalb von Sewastopol auf der Krim.
 
-[📍 Kriegsgräberstätte Gontscharnoje auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kriegsgr%C3%A4berst%C3%A4tte+Gontscharnoje)
+[📍 Kriegsgräberstätte Gontscharnoje auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=44.470756,33.705583)
 
 <iframe 
   width="100%" 
@@ -20,5 +20,5 @@ Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsg
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Gontscharnoje%20Kriegsgr%C3%A4berst%C3%A4tte&t=&z=10&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=44.470756,33.705583&t=&z=12&ie=UTF8&iwloc=&output=embed">
 </iframe>
