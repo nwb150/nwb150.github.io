@@ -4,7 +4,21 @@ nav_exclude: true
 
 # Hans Detlef Hölk
 
-Hans Detlef Hölk kam vom Hof Neuwittenbek. Seine Mutter Frieda hat später einen Hus geheiratet. Die Familie hat nach Kriegsende viele Flüchtlinge aufgenommen (darunter die Familie von [Walter Schneider](../schneider-walter/)), einige von ihnen sind bei uns in Neuwittenbek geblieben.
-Der Sohn von Hans Detlef Hölk, Hans-Friedrich Hölk, hat später den Hof an Rudolf Bonse verkauft.
+Hans Detlef Hölk wurde am 06.03.1909 in Neuwittenbek geboren und stammte vom Hof Neuwittenbek. Seine Mutter Frieda heiratete später einen Hus. Die Familie nahm nach Kriegsende viele Flüchtlinge auf (darunter die Familie von [Walter Schneider](../schneider-walter/)), von denen einige in Neuwittenbek blieben. Der Sohn von Hans Detlef Hölk, Hans-Friedrich Hölk, verkaufte den Hof später an Rudolf Bonse.
 
-Hans Detlef Hölk ist am 06.01.1942 in Russland gefallen.
+Im Zweiten Weltkrieg diente Hans Detlef Hölk als Unteroffizier. Er fiel am 06.01.1942 bei den Kämpfen vor Sewastopol auf der Krim.
+
+## Kriegsgräberstätte Gontscharnoje
+
+Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsgräberstätte in Gontscharnoje-Sewastopol (Block 3, Reihe 57, Grab 3985), etwa 20 Kilometer außerhalb von Sewastopol.
+
+[📍 Kriegsgräberstätte Gontscharnoje auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kriegsgr%C3%A4berst%C3%A4tte+Gontscharnoje)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Gontscharnoje%20Kriegsgr%C3%A4berst%C3%A4tte&t=&z=10&ie=UTF8&iwloc=&output=embed">
+</iframe>
