@@ -20,5 +20,5 @@ Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsg
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=44.470756,33.705583&t=&z=12&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=44.470756,33.705583&t=&z=8&ie=UTF8&iwloc=&output=embed">
 </iframe>
