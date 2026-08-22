@@ -51,7 +51,7 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 <!-- SOLDIER_LIST_END -->
 
 ## Erinnerungen lebendig halten – Macht mit!
-Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von Frau Tams. Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
+Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von [Frau Tams](./stroeh-heinrich/). Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
 
 <hr>
 
@@ -69,10 +69,21 @@ nav_exclude: true
 
 # Helmut Hass
 
-Helmut Hass und Johannes Hass waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
+Helmut Hass und [Johannes Hass](../hass-johannes/) waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
 
 
 Helmut Hass ist am 23.08.1944 in Russland gefallen.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -91,6 +102,17 @@ Alfred Jensen war ein Bruder von Detlef Jensen und ein Onkel des jetzigen Alfred
 
 Alfred Jensen ist einen Tag vor Heiligabend am 23.12.1943 in Italien gefallen.
 
+[📍 Italien auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Italien)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: marxen-friedrich/index.md
@@ -102,8 +124,20 @@ nav_exclude: true
 
 # Friedrich Marxen 
 
+Friedrich Marxen war ein Bruder von [Johannes Marxen](../marxen-johannes/).
+
 Friedrich Marxen ist am 02.07.1944 in Italien gefallen.
 
+[📍 Italien auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Italien)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -146,7 +180,18 @@ nav_exclude: true
 
 # Arthur Frohreich
 
-Arthur Frohreich ist am 21.12.1945 in Italien gefallen. 
+Arthur Frohreich ist am 21.12.1945 in Italien gefallen.
+
+[📍 Italien auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Italien)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -163,6 +208,17 @@ Die Eltern von Heinz Schlösser wohnten am Kanal in Levensau.  Von ihnen hat Kä
 
 Heinz Schlösser blieb am 12.10.1940 auf See.
 
+[📍 auf See (Nordsee) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Nordsee)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Nordsee&t=&z=4&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: huelle-erich/index.md
@@ -178,6 +234,17 @@ Erich Hülle war ein Bruder von Walter Hülle und Onkel von Norbert Hülle
 
 Erich Hülle ist am 13.02.1942 in Russland gefallen.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: galinsky-alfred/index.md
@@ -191,8 +258,18 @@ nav_exclude: true
 
 
 
-Alfred und Max Galinsky wurden beide als in Russland vermisst gemeldet, Alfred 1943 und Max 1945.  Sie waren Thea Galinskys Schwager und Schwiegervater.
+Alfred und [Max Galinsky](../galinsky-max/) wurden beide als in Russland vermisst gemeldet, Alfred 1943 und Max 1945.  Sie waren Thea Galinskys Schwager und Schwiegervater.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -209,6 +286,17 @@ Bruno Staude war der einzige Sohn von Lisbeth Staude.  Sie wohnten in der Dorfst
 
 Bruno Staude ist am 08.02.1942 in Russland gefallen.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: paetow-hans/index.md
@@ -224,8 +312,6 @@ nav_exclude: true
 Hans Paetows Vater war Verwalter auf Warleberg und er dessen einziger Sohn.
 
 
-Hans Paetow wird seit 1944 in Russland vermisst.
-
 
 ![Hans-Paetow](hans-paetow-1.jpg)
 
@@ -239,6 +325,19 @@ Das Foto zeigt ihn mit seinen Eltern vor deren Haus in Gettorf (gegenüber Kunze
 ![Hans-Paetow](hans-paetow-3.jpg)
 
 Hans Paetows Mutter
+
+Hans Paetow wird seit 1944 in Russland vermisst.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -255,6 +354,17 @@ Willy Jöhnk war der jüngere Bruder von Johann Jöhnk (Sandkuhle) und mit Hilde
 
 Willy Jöhnk wird seit dem 21.01.1945 in Polen vermisst.
 
+[📍 Polen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Polen)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Polen&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: pohl-heinz/index.md
@@ -265,12 +375,20 @@ nav_exclude: true
 ---
 
 # Heinz Pohl
-Heinz Pohl war mit Erna Pohl, geb. Berger verheiratet.  Auf der Flucht wurde ihre Tochter Rosemarie geboren.  Mutter und Baby waren erst auf dem Hof Neuwittenbek untergebracht, dann bei Familie Kaiser im Bölskamp, später in Kiel.
+Heinz Pohl war mit Erna Pohl, geb. Berger verheiratet.  Auf der Flucht wurde ihre Tochter Rosemarie geboren.  Mutter und Baby waren erst auf dem [Hof Neuwittenbek (Familie Hölk)](../hoelk-hans-detlef/) untergebracht, dann bei Familie Kaiser im Bölskamp, später in Kiel.
 
-Heinz Pohl ist am 10.02.1947 in Rußland gefallen.
+Heinz Pohl ist am 10.02.1947 in Russland gefallen.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
 
-
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -287,6 +405,661 @@ Walter Schönfelds Eltern wohnten im Altenteilhaus von Heinrich Grotkopp.
 Margrit Schloots (Bahnhofstraße) ist seine Nichte.
 
 Walter Schönfeld starb am 11.05.1941 in Hannover.
+
+[📍 Hannover auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Hannover%2C%20Deutschland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Hannover%2C%20Deutschland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+
+============================================================
+DATEI: zeitachse/index.md
+============================================================
+
+---
+layout: default
+title: Zeitachse
+permalink: /zeitachse/
+nav_exclude: true
+---
+
+# Chronologische Zeitachse (Entwurf)
+
+<style>
+.density-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  height: 140px;
+  margin: 20px 0 30px 0;
+  padding: 15px;
+  background: #f6f8fa;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+}
+.density-bar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+.density-bar {
+  width: 100%;
+  max-width: 32px;
+  background: linear-gradient(180deg, #cf222e 0%, #8c1d18 100%);
+  border-radius: 4px 4px 0 0;
+  min-height: 4px;
+}
+.density-label {
+  font-size: 0.8em;
+  color: #57606a;
+  margin-top: 6px;
+  font-weight: 600;
+}
+.density-val {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #cf222e;
+  margin-bottom: 3px;
+}
+.timeline-container {
+  position: relative;
+  padding-left: 22px;
+  border-left: 3px solid #d0d7de;
+  margin: 20px 0 40px 10px;
+}
+.timeline-year-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #1f2328;
+  margin: 25px 0 15px -31px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.timeline-year-badge {
+  background: #24292f;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+.timeline-month-cluster {
+  background: #fff8f0;
+  border-left: 4px solid #d97706;
+  padding: 6px 10px;
+  margin: 12px 0 12px -10px;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #92400e;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -29px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cf222e;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #d0d7de;
+}
+.timeline-date {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #57606a;
+}
+.timeline-title {
+  font-size: 1.05em;
+  font-weight: 600;
+}
+.timeline-location {
+  font-size: 0.9em;
+  color: #24292f;
+}
+</style>
+
+## Häufigkeits-Übersicht nach Jahren
+
+<div class="density-chart">
+  <div class="density-bar-container">
+    <div class="density-val">1</div>
+    <div class="density-bar" style="height: 20%;"></div>
+    <div class="density-label">1893</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1894</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1895</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1896</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1897</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1898</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1899</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1900</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1901</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1902</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">1</div>
+    <div class="density-bar" style="height: 20%;"></div>
+    <div class="density-label">1903</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1904</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1905</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1906</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1907</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1908</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">1</div>
+    <div class="density-bar" style="height: 20%;"></div>
+    <div class="density-label">1909</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1910</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1911</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1912</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1913</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1914</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1915</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1916</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1917</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1918</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1919</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1920</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1921</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1922</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1923</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1924</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1925</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1926</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1927</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1928</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1929</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1930</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1931</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1932</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1933</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1934</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1935</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1936</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1937</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1938</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1939</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">3</div>
+    <div class="density-bar" style="height: 60%;"></div>
+    <div class="density-label">1940</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">3</div>
+    <div class="density-bar" style="height: 60%;"></div>
+    <div class="density-label">1941</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">4</div>
+    <div class="density-bar" style="height: 80%;"></div>
+    <div class="density-label">1942</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">1</div>
+    <div class="density-bar" style="height: 20%;"></div>
+    <div class="density-label">1943</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">5</div>
+    <div class="density-bar" style="height: 100%;"></div>
+    <div class="density-label">1944</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">4</div>
+    <div class="density-bar" style="height: 80%;"></div>
+    <div class="density-label">1945</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1946</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">1</div>
+    <div class="density-bar" style="height: 20%;"></div>
+    <div class="density-label">1947</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1948</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1949</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val"></div>
+    <div class="density-bar" style="height: 0%;"></div>
+    <div class="density-label">1950</div>
+  </div>
+  <div class="density-bar-container">
+    <div class="density-val">1</div>
+    <div class="density-bar" style="height: 20%;"></div>
+    <div class="density-label">1951</div>
+  </div>
+</div>
+
+## Vertikaler Zeitstrahl
+
+<div class="timeline-container">
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1893</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(1 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">18.07.1893</div>
+  <div class="timeline-title"><a href="../popp-hinrich/">Hinrich Popp</a></div>
+  <div class="timeline-location">Ort: <em>Gettorf</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1903</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(1 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">08.06.1903</div>
+  <div class="timeline-title"><a href="../qualen-willi/">Willi Qualen</a></div>
+  <div class="timeline-location">Ort: <em>Neuwittenbek geboren</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1909</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(1 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">06.03.1909</div>
+  <div class="timeline-title"><a href="../hoelk-hans-detlef/">Hans Detlef Hölk</a></div>
+  <div class="timeline-location">Ort: <em>Neuwittenbek geboren und stammte vom Hof Neuwittenbek</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1940</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(3 Schicksale)</span>
+</div>
+
+<div class="timeline-month-cluster">
+  ⚡ Häufung: 2 Schicksale im Mai 1940
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">13.05.1940</div>
+  <div class="timeline-title"><a href="../bast-walter/">Walter Bast</a></div>
+  <div class="timeline-location">Ort: <em>Frankreich gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">24.05.1940</div>
+  <div class="timeline-title"><a href="../johst-wilhelm/">Wilhelm Johst</a></div>
+  <div class="timeline-location">Ort: <em>Belgien</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">12.10.1940</div>
+  <div class="timeline-title"><a href="../schloesser-heinz/">Heinz Schlösser</a></div>
+  <div class="timeline-location">Ort: <em>See</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1941</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(3 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">11.05.1941</div>
+  <div class="timeline-title"><a href="../schoenfeld-walter/">Walter Schönfeld</a></div>
+  <div class="timeline-location">Ort: <em>Hannover</em></div>
+</div>
+
+<div class="timeline-month-cluster">
+  ⚡ Häufung: 2 Schicksale im Dezember 1941
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">22.12.1941</div>
+  <div class="timeline-title"><a href="../joehnk-robert/">Robert Jöhnk</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">23.12.1941</div>
+  <div class="timeline-title"><a href="../bast-friedrich/">Friedrich Bast</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1942</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(4 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">06.01.1942</div>
+  <div class="timeline-title"><a href="../hoelk-hans-detlef/">Hans Detlef Hölk</a></div>
+  <div class="timeline-location">Ort: <em>den Kämpfen vor Sewastopol auf der Krim</em></div>
+</div>
+
+<div class="timeline-month-cluster">
+  ⚡ Häufung: 2 Schicksale im Februar 1942
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">08.02.1942</div>
+  <div class="timeline-title"><a href="../staude-bruno/">Bruno Staude</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">13.02.1942</div>
+  <div class="timeline-title"><a href="../huelle-erich/">Erich Hülle</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">14.09.1942</div>
+  <div class="timeline-title"><a href="../marxen-johannes/">Johannes Marxen</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1943</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(1 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">23.12.1943</div>
+  <div class="timeline-title"><a href="../jensen-alfred/">Alfred Jensen</a></div>
+  <div class="timeline-location">Ort: <em>Italien gefallen</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1944</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(5 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">14.01.1944</div>
+  <div class="timeline-title"><a href="../joehnk-otto/">Otto Jöhnk</a></div>
+  <div class="timeline-location">Ort: <em>Nikopol in Russland gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">02.07.1944</div>
+  <div class="timeline-title"><a href="../marxen-friedrich/">Friedrich Marxen</a></div>
+  <div class="timeline-location">Ort: <em>Italien gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">23.08.1944</div>
+  <div class="timeline-title"><a href="../hass-helmut/">Helmut Hass</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">22.11.1944</div>
+  <div class="timeline-title"><a href="../schneider-walter/">Walter Schneider</a></div>
+  <div class="timeline-location">Ort: <em>Russland gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">24.12.1944</div>
+  <div class="timeline-title"><a href="../behrend-erwin/">Erwin Behrend</a></div>
+  <div class="timeline-location">Ort: <em>Frankreich gefallen</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1945</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(4 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">18.02.1945</div>
+  <div class="timeline-title"><a href="../radbruch-otto/">Otto Radbruch</a></div>
+  <div class="timeline-location">Ort: <em>Russland verhungert</em></div>
+</div>
+
+<div class="timeline-month-cluster">
+  ⚡ Häufung: 2 Schicksale im April 1945
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">11.04.1945</div>
+  <div class="timeline-title"><a href="../goercke-erich/">Erich Görcke</a></div>
+  <div class="timeline-location">Ort: <em>Russland gestorben</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">25.04.1945</div>
+  <div class="timeline-title"><a href="../kuest-fritz/">Fritz Küst</a></div>
+  <div class="timeline-location">Ort: <em>Bayern gefallen</em></div>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">21.12.1945</div>
+  <div class="timeline-title"><a href="../frohreich-arthur/">Arthur Frohreich</a></div>
+  <div class="timeline-location">Ort: <em>Italien gefallen</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1947</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(1 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">10.02.1947</div>
+  <div class="timeline-title"><a href="../pohl-heinz/">Heinz Pohl</a></div>
+  <div class="timeline-location">Ort: <em>Rußland gefallen</em></div>
+</div>
+
+<div class="timeline-year-header">
+  <span class="timeline-year-badge">1951</span>
+  <span style="font-size: 0.75em; color: #57606a; font-weight: normal;">(1 Schicksale)</span>
+</div>
+
+<div class="timeline-item">
+  <div class="timeline-date">16.11.1951</div>
+  <div class="timeline-title"><a href="../stroeh-heinrich/">Heinrich Ströh</a></div>
+  <div class="timeline-location">Ort: <em>den Kriegsfolgen</em></div>
+</div>
+
+</div>
 
 
 ============================================================
@@ -329,9 +1102,20 @@ nav_exclude: true
 
 # Walter Bast 
 
-Walter und Friedrich Bast waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war Albert Bast gut versorgt und hat dort mitgearbeitet.
+Walter und [Friedrich Bast](../bast-friedrich/) waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war Albert Bast gut versorgt und hat dort mitgearbeitet.
 
 Walter Bast ist am 13.05.1940 in Frankreich gefallen.
+
+[📍 Frankreich auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Frankreich)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Frankreich&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -349,6 +1133,17 @@ Robert Jöhnk war der jüngere Bruder von Johann Jöhnk und ein Neffe von Otto J
 
 Robert Jöhnk ist am 22.12.1941 in Russland gefallen.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: radbruch-peter/index.md
@@ -362,6 +1157,17 @@ nav_exclude: true
 Im zivilen Leben vor dem Krieg war Peter Radbruch Bauingenieur.
 
 Peter Radbruch ist sechs Wochen nach Kriegsende am 23.06.1945 beim Minenräumen in Westfalen umgekommen.
+
+[📍 Westfalen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Westfalen%2C%20Deutschland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Westfalen%2C%20Deutschland&t=&z=6&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -379,6 +1185,17 @@ Max Gosch war Lehrer in Neuwittenbek. Mit seiner Frau Marie, geb. Brammer, hatte
 
 Max Gosch ist am 9.02.1945 im Krankenhaus von Halberstadt gestorben.
 
+[📍 Halberstadt auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Halberstadt%2C%20Deutschland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Halberstadt%2C%20Deutschland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: schneider-walter/index.md
@@ -392,11 +1209,23 @@ nav_exclude: true
 
 Walter Schneider lebte mit seiner Frau und den drei Töchtern (die jüngste ist Lisbeth Stein) in Ostpreußen, den nördlichen Masuren. Beruflich war er Tiefbauarbeiter. Seine Familie flüchtete an die Ostseeküste, verpasste dort die "Gustloff" und kam auf dem [Hof Neuwittenbek (Familie Hölk)](../hoelk-hans-detlef/) unter.
 
-Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 gefallen.
-
 ![Walter Schneider](walter-schneider-1.jpg)
 ![Walter Schneider](walter-schneider-2.jpg)
 ![Walter Schneider](walter-schneider-3.png)
+
+Walter Schneider hat Neuwittenbek nie kennengelernt. Er ist am 22.11.1944 in Russland gefallen.
+
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -409,7 +1238,7 @@ nav_exclude: true
 
 # Friedrich Bast 
 
-Friedrich und Walter Bast waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war er gut versorgt und hat dort mitgearbeitet.
+Friedrich und [Walter Bast](../bast-walter/) waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war er gut versorgt und hat dort mitgearbeitet.
 
 Friedrich Bast ist am 23.12.1941 in Russland gefallen.
 
@@ -434,10 +1263,21 @@ nav_exclude: true
 ---
 
 # Wilhelm Johst
-Wilhelm Johst wurde am 12.10.1914 als Sohn von Ella und dem Schmiedemeister August Jost geboren.  Seit 1913 sind sie die Pächter der Gutsschmiede in Warleberg. Wilhelm machte eine Ausbildung zum Schornsteinfeger und war als Geselle in Garding angestellt. Er lernte Lisbeth Lühr kennen und heiratete sie im Frühjahr 1939, mit Karl-August war Nachwuchs unterwegs.  Gleich zu Kriegsbeginn eingezogen, kehrte er nur einmal auf Heimaturlaub zurück und lernte seinen Sohn kennen.
+Wilhelm Johst wurde am 12.10.1914 als Sohn von Ella und dem Schmiedemeister August Johst geboren.  Seit 1913 sind sie die Pächter der Gutsschmiede in Warleberg. Wilhelm machte eine Ausbildung zum Schornsteinfeger und war als Geselle in Garding angestellt. Er lernte Lisbeth Lühr kennen und heiratete sie im Frühjahr 1939, mit Karl-August war Nachwuchs unterwegs.  Gleich zu Kriegsbeginn eingezogen, kehrte er nur einmal auf Heimaturlaub zurück und lernte seinen Sohn kennen.
 
 
 Kurz darauf fiel Wilhelm Johst am 24.05.1940 in Belgien.  Bestattet wurde er in Lommel.
+
+[📍 Lommel (Belgien) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Lommel%2C%20Belgien)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Lommel%2C%20Belgien&t=&z=6&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -453,6 +1293,17 @@ Vor dem Krieg arbeitete Otto Radbruch in einer Schlachterei in Hamburg.
 
 Otto Radbruch kam nicht wieder zurück nach Hause, er ist am 18.02.1945 in Russland verhungert.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: hass-johannes/index.md
@@ -464,10 +1315,21 @@ nav_exclude: true
 
 # Johannes Hass
 
-Johannes Hass und Helmut Hass waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
+Johannes Hass und [Helmut Hass](../hass-helmut/) waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
 
 
-Johannes Hass wird seit 1945 in Westpreußen vermisst. 
+Johannes Hass wird seit 1945 in Westpreußen vermisst.
+
+[📍 Westpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Westpreu%C3%9Fen)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Westpreu%C3%9Fen&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -480,7 +1342,18 @@ nav_exclude: true
 
 # Fritz Petersen 
 
-Fritz Petersen ist im Oktober 1945 in Russland gefallen, sein Bruder Heinz am 6. Februar des selben Jahres in Ostpreußen.
+Fritz Petersen ist im Oktober 1945 in Russland gefallen, sein Bruder [Heinz](../petersen-heinz/) am 6. Februar desselben Jahres in Ostpreußen.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -492,9 +1365,20 @@ nav_exclude: true
 ---
 
 # Bernhard Pfahl 
-Bernhard Pfahl war der Sohn von Frisör Pfahl, die Eltern  wohnten zuerst in zwei Bauwagen mit Friseurbetrieb auf dem Grundstück (heute Stach).  Später Neubau im Bölskamp, Familie Schneider/Stein wohnte oben.
+Bernhard Pfahl war der Sohn von Frisör Pfahl, die Eltern  wohnten zuerst in zwei Bauwagen mit Friseurbetrieb auf dem Grundstück (heute Stach).  Später Neubau im Bölskamp, [Familie Schneider/Stein](../schneider-walter/) wohnte oben.
 
 Bernhard Pfahl wird seit 1945 in Pommern vermisst.
+
+[📍 Pommern auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Pommern)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Pommern&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -509,8 +1393,18 @@ nav_exclude: true
 
 
 
-Max und Alfred Galinsky wurden beide als in Russland vermisst gemeldet, Alfred 1943 und Max 1945.  Sie waren Thea Galinskys Schwager und Schwiegervater.
+Max und [Alfred Galinsky](../galinsky-alfred/) wurden beide als in Russland vermisst gemeldet, Alfred 1943 und Max 1945.  Sie waren Thea Galinskys Schwager und Schwiegervater.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -528,6 +1422,17 @@ Hans Grotkopp war ein Bruder von Mariechen Jensen aus dem Bölskamp.
 
 Hans Grotkopp wird seit dem 12.07.1944 in Russland vermisst.
 
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: kuest-fritz/index.md
@@ -541,6 +1446,16 @@ nav_exclude: true
 
 Fritz Küst ist am 25.04.1945 in Bayern gefallen.
 
+[📍 Bayern auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Bayern%2C%20Deutschland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Bayern%2C%20Deutschland&t=&z=6&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -553,9 +1468,20 @@ nav_exclude: true
 
 # Johannes Marxen 
 
-Johannes Marxen war ein Bruder von Hertha Kaiser.  Sie wohnten auf dem “Hauf” im Gettorfer Weg.  Wolfgang Kaiser ist sein Neffe.
+Johannes Marxen war ein Bruder von [Friedrich Marxen](../marxen-friedrich/) und Hertha Kaiser. Sie wohnten auf dem “Hauf” im Gettorfer Weg. Wolfgang Kaiser ist sein Neffe.
 
 Johannes Marxen ist am 14.09.1942 in Russland gefallen.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -572,6 +1498,17 @@ Die Kleins wohnten in dem Baasch Altenteil, dem kleinsten Haus an der Hauptstra�
 
 Kurt Klein wird seit dem 27.02.1945 in Ostpreußen vermisst.
 
+[📍 Region Königsberg / ehem. Ostpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kaliningrad)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: petersen-heinz/index.md
@@ -583,10 +1520,21 @@ nav_exclude: true
 
 # Heinz Petersen 
 
-Heinz Petersens Bruder Fritz ist im Oktober des selben Jahres in Russland gefallen.
+Heinz Petersens Bruder [Fritz](../petersen-fritz/) ist im Oktober desselben Jahres in Russland gefallen.
 
 
 Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
+
+[📍 Region Königsberg / ehem. Ostpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kaliningrad)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -599,7 +1547,18 @@ nav_exclude: true
 
 # Erwin Behrend
 
-Erwin Behrend ist am 24.12.1944 in Frankreich gefallen. 
+Erwin Behrend ist am 24.12.1944 in Frankreich gefallen.
+
+[📍 Frankreich auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Frankreich)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Frankreich&t=&z=5&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -611,9 +1570,20 @@ nav_exclude: true
 ---
 
 # Erich Görcke
-Erich Görcke ist ein Schwager zu Hans Detlef Hölk, verheiratet mit Marga, geborene Hölk.  Das Paar hatte drei Kinder: Elke, Hans-Richard und Erich.
+Erich Görcke ist ein Schwager zu [Hans Detlef Hölk](../hoelk-hans-detlef/), verheiratet mit Marga, geborene Hölk.  Das Paar hatte drei Kinder: Elke, Hans-Richard und Erich.
 
-Erich Görcke ist kurz vor Kriegsende am 11.04.1945 in Russland gestorben. 
+Erich Görcke ist kurz vor Kriegsende am 11.04.1945 in Russland gestorben.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -626,24 +1596,18 @@ nav_exclude: true
 
 # Hans Detlef Hölk
 
-Hans Detlef Hölk wurde am 06.03.1909 in Neuwittenbek geboren und stammte vom Hof Neuwittenbek. Seine Mutter Frieda heiratete später einen Hus. Die Familie nahm nach Kriegsende viele Flüchtlinge auf (darunter die Familie von [Walter Schneider](../schneider-walter/)), von denen einige in Neuwittenbek blieben. Der Sohn von Hans Detlef Hölk, Hans-Friedrich Hölk, verkaufte den Hof später an Rudolf Bonse.
+Hans Detlef Hölk wurde am 06.03.1909 in Neuwittenbek geboren und stammte vom Hof Neuwittenbek. Seine Schwester Marga war mit [Erich Görcke](../goercke-erich/) verheiratet. Seine Mutter Frieda heiratete später einen Hus. Die Familie nahm nach Kriegsende viele Flüchtlinge auf (darunter die Familien von [Walter Schneider](../schneider-walter/) und [Heinz Pohl](../pohl-heinz/)), von denen einige in Neuwittenbek blieben. Der Sohn von Hans Detlef Hölk, Hans-Friedrich Hölk, verkaufte den Hof später an Rudolf Bonse.
 
-Im Zweiten Weltkrieg diente Hans Detlef Hölk als Unteroffizier. Er fiel am 06.01.1942 bei den Kämpfen vor Sewastopol auf der Krim.
+Im Zweiten Weltkrieg diente Hans Detlef Hölk als Unteroffizier. Er fiel am 06.01.1942 beim Kampf um Sewastopol auf der Halbinsel Krim.
 
 ## Kriegsgräberstätte Gontscharnoje
 
-Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsgräberstätte in Gontscharnoje-Sewastopol (Block 3, Reihe 57, Grab 3985), etwa 20 Kilometer außerhalb von Sewastopol auf der Krim.
+Seine letzte Ruhestätte befindet sich auf der Kriegsgräberstätte Gontscharnoje-Sewastopol:
+* **Grablage:** Block 3, Reihe 57, Grab 3985
 
-[📍 Kriegsgräberstätte Gontscharnoje auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=44.470756,33.705583)
+[Kartenansicht auf Google Maps öffnen](https://maps.google.com/maps?q=44.470756,33.705583)
 
-<iframe 
-  width="100%" 
-  height="300" 
-  style="border:0; border-radius: 8px; margin-top: 10px;" 
-  loading="lazy" 
-  allowfullscreen 
-  src="https://maps.google.com/maps?q=44.470756,33.705583&t=&z=4&ie=UTF8&iwloc=&output=embed">
-</iframe>
+<iframe src="https://maps.google.com/maps?q=44.470756,33.705583&amp;z=8&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
 ============================================================
@@ -668,7 +1632,16 @@ Auf dem Foto sehen wir ihn mit seiner Frau und seiner älteren Tochter.
 
 Nach dem Krieg 1946 wurde seine jüngere Tochter Karin geboren (heute Karin Tams).  Am Tag ihrer Taufe hält er sie auf dem Arm, ihre ältere Schwester sitzt daneben und Oma wollte eigentlich nicht mit aufs Bild.
 
+[📍 Neuwittenbek auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Neuwittenbek)
 
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Neuwittenbek&t=&z=9&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -683,7 +1656,18 @@ nav_exclude: true
 
 Der Vater von Kurt Hansen, Christian Hansen war später Lehrer in Neuwittenbek.  Gewohnt hat er im Bölskamp.
 
-Kurt Hansen wird seit 1944 in Russland vermisst. 
+Kurt Hansen wird seit 1944 in Russland vermisst.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -700,5 +1684,16 @@ Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (P
 
 
 Otto Jöhnk ist am 14.01.1944 in Nikopol in Russland gefallen.
+
+[📍 Nikopol auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Nikopol%2C%20Ukraine)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Nikopol%2C%20Ukraine&t=&z=6&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 

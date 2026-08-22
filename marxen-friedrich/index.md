@@ -4,6 +4,8 @@ nav_exclude: true
 
 # Friedrich Marxen 
 
+Friedrich Marxen war ein Bruder von [Johannes Marxen](../marxen-johannes/).
+
 Friedrich Marxen ist am 02.07.1944 in Italien gefallen.
 
 [📍 Italien auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Italien)

@@ -4,10 +4,10 @@ nav_exclude: true
 
 # Otto Jöhnk
 
-Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (Petersen) und Elsbeth.  Er war Landwirt.
+Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (Petersen) und Elsbeth. Er war Landwirt.
 
 
-Otto Jöhnk ist am 14.01.1944 in Nikopol in Russland gefallen.
+Otto Jöhnk ist am 14.01.1944 in Nikopol (in der heutigen Ukraine) gefallen.
 
 [📍 Nikopol auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Nikopol%2C%20Ukraine)
 
