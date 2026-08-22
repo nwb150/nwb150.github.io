@@ -15,4 +15,4 @@ Seine letzte Ruhestätte befindet sich auf der Kriegsgräberstätte Gontscharnoj
 
 [Kartenansicht auf Google Maps öffnen](https://maps.google.com/maps?q=44.470756,33.705583)
 
-<iframe src="https://maps.google.com/maps?q=44.470756,33.705583&amp;z=8&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://maps.google.com/maps?q=44.470756,33.705583&amp;z=4&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
