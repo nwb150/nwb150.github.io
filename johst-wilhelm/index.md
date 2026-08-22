@@ -7,3 +7,14 @@ Wilhelm Johst wurde am 12.10.1914 als Sohn von Ella und dem Schmiedemeister Augu
 
 
 Kurz darauf fiel Wilhelm Johst am 24.05.1940 in Belgien.  Bestattet wurde er in Lommel.
+
+[📍 Lommel (Belgien) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Lommel%2C%20Belgien)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Lommel%2C%20Belgien&t=&z=6&ie=UTF8&iwloc=&output=embed">
+</iframe>
