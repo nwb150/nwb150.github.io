@@ -10,10 +10,10 @@ Walter Schneider lebte mit seiner Frau und den drei Töchtern (die jüngste ist 
 ![Walter Schneider](walter-schneider-2.jpg)
 ![Walter Schneider](walter-schneider-3.png)
 
-Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 gefallen.
+Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 in Russland gefallen.
 
 
-[📍 Region Königsberg / ehem. Ostpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kaliningrad)
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
 
 <iframe 
   width="100%" 
@@ -21,5 +21,5 @@ Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 gefalle
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
 </iframe>
