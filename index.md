@@ -47,7 +47,7 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 <!-- SOLDIER_LIST_END -->
 
 ## Erinnerungen lebendig halten – Macht mit!
-Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von Frau Tams. Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
+Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von [Frau Tams](./stroeh-heinrich/). Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
 
 <hr>
 
