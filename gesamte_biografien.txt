@@ -12,6 +12,8 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 <!-- SOLDIER_LIST_START -->
 * [Friedrich Bast](./bast-friedrich/)
 * [Walter Bast](./bast-walter/)
+* [Erwin Behrend](./behrend-erwin/)
+* [Arthur Frohreich](./frohreich-arthur/)
 * [Alfred Galinsky](./galinsky-alfred/)
 * [Max Galinsky](./galinsky-max/)
 * [Erich Goercke](./goercke-erich/)
@@ -28,7 +30,7 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 * [Willy Joehnk](./joehnk-willy/)
 * [Wilhelm Johst](./johst-wilhelm/)
 * [Kurt Klein](./klein-kurt/)
-* [Fritz Kuest](./kuest-Fritz/)
+* [Fritz Kuest](./kuest-fritz/)
 * [Friedrich Marxen](./marxen-friedrich/)
 * [Johannes Marxen](./marxen-johannes/)
 * [Hans Paetow](./paetow-hans/)
@@ -84,7 +86,7 @@ nav_exclude: true
 # Alfred Jensen
 
 
-Alfred Jensen war ein Bruder von Detlef Jensen und ein Onkel des jetzigen Alfes Jensen.
+Alfred Jensen war ein Bruder von Detlef Jensen und ein Onkel des jetzigen Alfred Jensen.
 
 
 Alfred Jensen ist einen Tag vor Heiligabend am 23.12.1943 in Italien gefallen.
@@ -117,7 +119,7 @@ nav_exclude: true
 
 Hinrich Popp wurde am 3. April 1896 geboren. Seine Eltern sind Carl Hinrich Popp und Elisabeth Christine Jöhnk, getraut am 18.07.1893 in Gettorf.
 
-Hinrich Popp ist am 24.06.1914 gefallen.
+Hinrich Popp ist am 24.06.1916 gefallen.
 
 
 ![Hinrich Popp](hinrich-popp-3.jpg)
@@ -132,6 +134,19 @@ Hinrich Popp ist am 24.06.1914 gefallen.
 
 ![Hinrich Popp](hinrich-popp-2.jpg)
 
+
+
+============================================================
+DATEI: frohreich-arthur/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Arthur Frohreich
+
+Arthur Frohreich ist am 21.12.1945 in Italien gefallen. 
 
 
 ============================================================
@@ -221,6 +236,11 @@ Das Foto zeigt ihn mit seinen Eltern vor deren Haus in Gettorf (gegenüber Kunze
 ![Hans-Paetow](hans-paetow-2.jpg)
 
 
+![Hans-Paetow](hans-paetow-3.jpg)
+
+Hans Paetows Mutter
+
+
 ============================================================
 DATEI: joehnk-willy/index.md
 ============================================================
@@ -245,7 +265,7 @@ nav_exclude: true
 ---
 
 # Heinz Pohl
-Heinz Pohl war mit Erna Pohl, geb. Berger verheirattet.  Auf der Flucht wurde ihre Tochter Rosemarie geboren.  Mutter und Baby waren erst auf dem Hof Neuwittenbek untergebracht, dann bei Familie Kaiser im Bölskamp, später in Kiel.
+Heinz Pohl war mit Erna Pohl, geb. Berger verheiratet.  Auf der Flucht wurde ihre Tochter Rosemarie geboren.  Mutter und Baby waren erst auf dem Hof Neuwittenbek untergebracht, dann bei Familie Kaiser im Bölskamp, später in Kiel.
 
 Heinz Pohl ist am 10.02.1947 in Rußland gefallen.
 
@@ -279,7 +299,25 @@ nav_exclude: true
 
 # Willi Qualen
 
-Willi Qualen ist am 06.12.1943 in Russland gefallen.  Mit seiner Frau Anni (später Jungjohann) hatte er drei Töchter: Magda (später Magda Medzich), Gerda und Irma.
+Willi (Willy Hinrich) Qualen wurde am 08.06.1903 in Neuwittenbek geboren. Mit seiner Frau Anni (später Jungjohann) hatte er drei Töchter: Magda (später Magda Medzich), Gerda und Irma.
+
+Im Zweiten Weltkrieg diente er als Gefreiter und fiel am 04.01.1943 (nach anderen lokalen Aufzeichnungen am 06.12.1943) bei Woroschilowgrad (dem heutigen Luhansk) an der Ostfront.
+
+## Kriegsgräberstätte Charkiw
+
+Nach Informationen des Volksbundes befindet sich sein ursprüngliches Grab im Raum Luhansk. Gedenkend ist er der zentralen deutschen Kriegsgräberstätte am Stadtring von Charkiw (Ukraine) zugeordnet.
+
+[📍 Kriegsgräberstätte Charkiw auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=50.080489,36.306031)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=50.080489,36.306031&t=&z=4&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
 
 ============================================================
 DATEI: bast-walter/index.md
@@ -323,7 +361,7 @@ nav_exclude: true
 # Peter Radbruch 
 Im zivilen Leben vor dem Krieg war Peter Radbruch Bauingenieur.
 
-Peter Radbruch ist sechs Wochen nach Kriegsende am 23.06.1945 beim Minenräumen umgekommen.
+Peter Radbruch ist sechs Wochen nach Kriegsende am 23.06.1945 beim Minenräumen in Westfalen umgekommen.
 
 
 ============================================================
@@ -352,13 +390,13 @@ nav_exclude: true
 
 # Walter Schneider
 
+Walter Schneider lebte mit seiner Frau und den drei Töchtern (die jüngste ist Lisbeth Stein) in Ostpreußen, den nördlichen Masuren. Beruflich war er Tiefbauarbeiter. Seine Familie flüchtete an die Ostseeküste, verpasste dort die "Gustloff" und kam auf dem [Hof Neuwittenbek (Familie Hölk)](../hoelk-hans-detlef/) unter.
 
-Walter Schneider lebte mit seiner Frau und den drei Töchtern (die jüngste ist Lisbeth Stein) in Ostpreußen, den nördlichen Masuren. Beruflich war er Tiefbauarbeiter. Er kam am 22.11.1944 um, seine Familie flüchtete an die Ostseeküste, verpasste dort die "Gustloff".  Sie kamen auf dem Hof Neuwittenbek unter.
+Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 gefallen.
 
-![Walter Schneider](walter-schneider-1.png)
-
-
-
+![Walter Schneider](walter-schneider-1.jpg)
+![Walter Schneider](walter-schneider-2.jpg)
+![Walter Schneider](walter-schneider-3.png)
 
 
 ============================================================
@@ -541,6 +579,19 @@ Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
 
 
 ============================================================
+DATEI: behrend-erwin/index.md
+============================================================
+
+---
+nav_exclude: true
+---
+
+# Erwin Behrend
+
+Erwin Behrend ist am 24.12.1944 in Frankreich gefallen. 
+
+
+============================================================
 DATEI: goercke-erich/index.md
 ============================================================
 
@@ -548,10 +599,10 @@ DATEI: goercke-erich/index.md
 nav_exclude: true
 ---
 
-# Erich Görke
-Erich Görke ist ein Schwager zu Hans Detlef Hölk, verheiratet mit Marga, geborene Hölk.  Das Paar hatte drei Kinder: Elke, Hans-Richard und Erich.
+# Erich Görcke
+Erich Görcke ist ein Schwager zu Hans Detlef Hölk, verheiratet mit Marga, geborene Hölk.  Das Paar hatte drei Kinder: Elke, Hans-Richard und Erich.
 
-Erich Görke ist kurz vor Kriegsende am 11.04.1945 in Russland gestorben. 
+Erich Görcke ist kurz vor Kriegsende am 11.04.1945 in Russland gestorben. 
 
 
 ============================================================
@@ -564,9 +615,24 @@ nav_exclude: true
 
 # Hans Detlef Hölk
 
-Hans Detlef Hölk vom Hof Neuwittenbek. Seine Frau Frida hat später einen Hus geheiratet.  Das Paar hat nach Kriegsende viele Flüchtlinge aufgenommen, die zum Teil auch heute noch in Neuwittenbek wohnen.
+Hans Detlef Hölk wurde am 06.03.1909 in Neuwittenbek geboren und stammte vom Hof Neuwittenbek. Seine Mutter Frieda heiratete später einen Hus. Die Familie nahm nach Kriegsende viele Flüchtlinge auf (darunter die Familie von [Walter Schneider](../schneider-walter/)), von denen einige in Neuwittenbek blieben. Der Sohn von Hans Detlef Hölk, Hans-Friedrich Hölk, verkaufte den Hof später an Rudolf Bonse.
 
-Hans Detlef Hölk ist am 06.01.1942 in Russland gefallen.
+Im Zweiten Weltkrieg diente Hans Detlef Hölk als Unteroffizier. Er fiel am 06.01.1942 bei den Kämpfen vor Sewastopol auf der Krim.
+
+## Kriegsgräberstätte Gontscharnoje
+
+Seine letzte Ruhestätte befindet sich auf der vom Volksbund errichteten Kriegsgräberstätte in Gontscharnoje-Sewastopol (Block 3, Reihe 57, Grab 3985), etwa 20 Kilometer außerhalb von Sewastopol auf der Krim.
+
+[📍 Kriegsgräberstätte Gontscharnoje auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=44.470756,33.705583)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=44.470756,33.705583&t=&z=4&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 
 ============================================================
@@ -581,8 +647,17 @@ nav_exclude: true
 
 Heinrich Ströh war Sattlermeister.
 
+Heinrich Ströh kam mit Tuberkulose aus dem Krieg zurück und starb am 16.11.1951 an den Kriegsfolgen. 
 
-Heinrich Ströh wurde mit Tuberkulose entlassen und starb am 16.11.1951 an den Kriegsfolgen. 
+![Heinrich Ströh](heinrich-stroeh-1.jpg)
+
+Auf dem Foto sehen wir ihn mit seiner Frau und seiner älteren Tochter.
+
+![Heinrich Ströh](heinrich-stroeh-2.jpg)
+
+Nach dem Krieg 1946 wurde seine jüngere Tochter Karin geboren (heute Karin Tams).  Am Tag ihrer Taufe hält er sie auf dem Arm, ihre ältere Schwester sitzt daneben und Oma wollte eigentlich nicht mit aufs Bild.
+
+
 
 
 ============================================================
