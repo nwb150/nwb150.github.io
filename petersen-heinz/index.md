@@ -9,7 +9,7 @@ Heinz Petersens Bruder [Fritz](../petersen-fritz/) ist im Oktober des selben Jah
 
 Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
 
-[📍 Ostpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Ostpreu%C3%9Fen)
+[📍 Region Königsberg / ehem. Ostpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kaliningrad)
 
 <iframe 
   width="100%" 
@@ -17,5 +17,5 @@ Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Ostpreu%C3%9Fen&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=7&ie=UTF8&iwloc=&output=embed">
 </iframe>
