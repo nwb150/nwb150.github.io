@@ -16,5 +16,5 @@ Kurt Klein wird seit dem 27.02.1945 in Ostpreußen vermisst.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>

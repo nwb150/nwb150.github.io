@@ -20,5 +20,5 @@ Walter Schneider hat Neuwittenbek nie kennengelernt er ist am 22.11.1944 gefalle
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
