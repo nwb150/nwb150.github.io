@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Zeitachse
-nav_order: 2
+permalink: /zeitachse/
+nav_exclude: true
 ---
 
 # Chronologische Zeitachse

@@ -3,7 +3,6 @@ import re
 from pathlib import Path
 from datetime import datetime
 
-# Monate für die Datumsumwandlung
 MONTHS = {
     'januar': 1, 'februar': 2, 'märz': 3, 'april': 4, 'mai': 5, 'juni': 6,
     'juli': 7, 'august': 8, 'september': 9, 'oktober': 10, 'november': 11, 'dezember': 12
@@ -11,36 +10,31 @@ MONTHS = {
 
 events = []
 
-# Regex sucht nach Mustersätzen wie: "ist am 23.12.1941 in Russland gefallen" oder "am 6. Februar 1945"
 pattern = re.compile(
     r'(?:ist\s+)?am\s+(\d{1,2})\.\s*([A-Za-zäöüÄÖÜ]+|\d{1,2})\.\s*(\d{4})\s+(?:in|bei|an|auf)\s+([^.\n]+)',
     re.IGNORECASE
 )
 
 for md_file in Path('.').rglob('*.md'):
-    if md_file.name in ['index.md', 'zeitachse.md', 'README.md'] and md_file.parent == Path('.'):
+    # Hauptseiten und Zeitachsen-Ordner auslassen
+    if md_file.name in ['index.md', 'README.md'] and md_file.parent in [Path('.'), Path('zeitachse')]:
         continue
         
     content = md_file.read_text(encoding='utf-8')
     
-    # Name aus der H1-Überschrift extrahieren
     title_match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
     name = title_match.group(1).strip() if title_match else md_file.parent.name
     
-    # Relative URL für GitHub Pages / Jekyll bestimmen
+    # Relative Verlinkung aus dem Unterordner /zeitachse/ heraus
     rel_link = f"../{md_file.parent.name}/"
     
-    # Datum und Ort finden
     for match in pattern.finditer(content):
         day = int(match.group(1))
         month_raw = match.group(2).lower()
         year = int(match.group(3))
         location = match.group(4).strip()
         
-        if month_raw.isdigit():
-            month = int(month_raw)
-        else:
-            month = MONTHS.get(month_raw, 1)
+        month = int(month_raw) if month_raw.isdigit() else MONTHS.get(month_raw, 1)
             
         try:
             dt = datetime(year, month, day)
@@ -54,14 +48,13 @@ for md_file in Path('.').rglob('*.md'):
         except ValueError:
             continue
 
-# Chronologisch sortieren
 events.sort(key=lambda x: x['date'])
 
-# Markdown-Inhalt für zeitachse.md generieren
 md_output = """---
 layout: default
 title: Zeitachse
-nav_order: 2
+permalink: /zeitachse/
+nav_exclude: true
 ---
 
 # Chronologische Zeitachse
@@ -84,5 +77,23 @@ for ev in events:
 
 md_output += "\n</div>\n"
 
-Path('zeitachse.md').write_text(md_output, encoding='utf-8')
-print(f"Zeitachse erfolgreich mit {len(events)} Einträgen generiert.")
+# 1. Unterordner zeitachse/ anlegen und index.md schreiben
+out_dir = Path('zeitachse')
+out_dir.mkdir(exist_ok=True)
+(out_dir / 'index.md').write_text(md_output, encoding='utf-8')
+print(f"Zeitachse unter zeitachse/index.md mit {len(events)} Einträgen generiert.")
+
+# 2. Alte zeitachse.md im Hauptverzeichnis aufräumen, falls vorhanden
+old_file = Path('zeitachse.md')
+if old_file.exists():
+    old_file.unlink()
+
+# 3. Link auf der Hauptseite (index.md) ergänzen
+root_index = Path('index.md')
+if root_index.exists():
+    root_content = root_index.read_text(encoding='utf-8')
+    link_markdown = "[⏱️ Chronologische Zeitachse aller Schicksale anzeigen](zeitachse/)"
+    if 'zeitachse' not in root_content.lower():
+        root_content += f"\n\n---\n\n{link_markdown}\n"
+        root_index.write_text(root_content, encoding='utf-8')
+        print("Link zur Zeitachse auf der Hauptseite (index.md) ergänzt.")

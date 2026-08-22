@@ -53,3 +53,8 @@ Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den K
 
 <p>Ein rein ehrenamtliches, nicht-kommerzielles Open-Source-Projekt der Gemeinde Neuwittenbek.</p>
 <p><a href="impressum.html">Impressum & Datenschutz</a></p>
+
+
+---
+
+[⏱️ Chronologische Zeitachse aller Schicksale anzeigen](zeitachse/)
