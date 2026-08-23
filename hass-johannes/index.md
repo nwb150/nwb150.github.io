@@ -16,5 +16,5 @@ Johannes Hass wird seit 1945 im ehemaligen Westpreußen (heute Polen) vermisst.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=54.0,18.5&t=&z=8&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=54.0,18.5&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
