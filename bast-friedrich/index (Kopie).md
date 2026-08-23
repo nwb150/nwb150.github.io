@@ -18,5 +18,6 @@ Friedrich Bast ist am 23.12.1941 in Russland gefallen.
   height="300" 
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
-  src="https://www.openstreetmap.org/export/embed.html?bbox=20.0000,45.0000,170.0000,75.0000&layer=mapnik">
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
 </iframe>
