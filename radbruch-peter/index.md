@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Peter Radbruch"
+death_date: "23.06.1945"
+location: "Westfalen"
 ---
 
 # Peter Radbruch 

@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Erich Görcke"
+death_date: "11.04.1945"
+location: "Russland"
 ---
 
 # Erich Görcke

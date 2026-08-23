@@ -1,5 +1,10 @@
 ---
 nav_exclude: true
+title: "Willi Qualen"
+lat: 50.080489
+lng: 36.306031
+death_date: "08.06.1903"
+location: "Kriegsgräberstätte Charkiw"
 ---
 
 # Willi Qualen

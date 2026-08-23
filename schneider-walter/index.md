@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Walter Schneider"
+death_date: "22.11.1944"
+location: "Russland"
 ---
 
 # Walter Schneider

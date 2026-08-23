@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Robert Jöhnk"
+death_date: "22.12.1941"
+location: "Russland"
 ---
 
 # Robert Jöhnk

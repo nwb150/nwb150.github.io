@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Hans Paetow"
+location: "Russland"
 ---
 
 # Hans Paetow

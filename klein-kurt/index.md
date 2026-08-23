@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Kurt Klein"
+death_date: "27.02.1945"
+location: "Region Königsberg / ehem. Ostpreußen"
 ---
 
 # Kurt Klein 

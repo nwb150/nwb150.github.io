@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Max Galinsky"
+location: "Russland"
 ---
 
 # Max Galinsky

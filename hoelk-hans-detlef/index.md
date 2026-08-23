@@ -1,5 +1,9 @@
 ---
 nav_exclude: true
+title: "Hans Detlef Hölk"
+lat: 44.470756
+lng: 33.705583
+death_date: "06.03.1909"
 ---
 
 # Hans Detlef Hölk

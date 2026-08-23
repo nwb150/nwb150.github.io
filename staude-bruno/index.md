@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Bruno Staude"
+death_date: "08.02.1942"
+location: "Russland"
 ---
 
 # Bruno Staude

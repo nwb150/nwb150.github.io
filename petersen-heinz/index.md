@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Heinz Petersen"
+location: "Region Königsberg / ehem. Ostpreußen"
 ---
 
 # Heinz Petersen 

@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Helmut Hass"
+death_date: "23.08.1944"
+location: "Russland"
 ---
 
 # Helmut Hass

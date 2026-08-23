@@ -1,5 +1,10 @@
 ---
 nav_exclude: true
+title: "Heinz Schlösser"
+lat: 56.0
+lng: 7.0
+death_date: "12.10.1940"
+location: "Seegebiet Nordsee / Dänische Küste"
 ---
 
 # Heinz Schlösser 

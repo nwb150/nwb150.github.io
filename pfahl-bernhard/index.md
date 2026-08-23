@@ -1,5 +1,9 @@
 ---
 nav_exclude: true
+title: "Bernhard Pfahl"
+lat: 53.8
+lng: 15.0
+location: "Region Pommern"
 ---
 
 # Bernhard Pfahl 

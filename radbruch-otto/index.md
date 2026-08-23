@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Otto Radbruch"
+death_date: "18.02.1945"
+location: "Russland"
 ---
 
 # Otto Radbruch 

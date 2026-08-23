@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Willy Jöhnk"
+death_date: "21.01.1945"
+location: "Polen"
 ---
 
 # Willy Jöhnk

@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Fritz Petersen"
+location: "Russland"
 ---
 
 # Fritz Petersen 

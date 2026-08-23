@@ -1,5 +1,9 @@
 ---
 nav_exclude: true
+title: "Johannes Hass"
+lat: 54.0
+lng: 18.5
+location: "Region Westpreußen (heute Polen)"
 ---
 
 # Johannes Hass

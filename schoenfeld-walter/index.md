@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Walter Schönfeld"
+death_date: "11.05.1941"
+location: "Hannover"
 ---
 
 # Walter Schönfeld 

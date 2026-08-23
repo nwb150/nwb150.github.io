@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Alfred Jensen"
+death_date: "23.12.1943"
+location: "Italien"
 ---
 
 # Alfred Jensen

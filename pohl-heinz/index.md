@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Heinz Pohl"
+death_date: "10.02.1947"
+location: "Russland"
 ---
 
 # Heinz Pohl

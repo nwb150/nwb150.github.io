@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Hans Grotkopp"
+death_date: "12.07.1944"
+location: "Russland"
 ---
 
 # Hans Grotkopp

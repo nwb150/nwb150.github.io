@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Friedrich Marxen"
+death_date: "02.07.1944"
+location: "Italien"
 ---
 
 # Friedrich Marxen 

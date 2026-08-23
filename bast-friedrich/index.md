@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Friedrich Bast"
+death_date: "23.12.1941"
+location: "Russland"
 ---
 
 # Friedrich Bast 

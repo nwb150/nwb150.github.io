@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Heinrich Ströh"
+death_date: "16.11.1951"
+location: "Neuwittenbek"
 ---
 
 # Heinrich Ströh

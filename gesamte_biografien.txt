@@ -204,11 +204,11 @@ nav_exclude: true
 
 # Heinz Schlösser 
 
-Die Eltern von Heinz Schlösser wohnten am Kanal in Levensau.  Von ihnen hat Käthe Schröder Gössel geholt.
+Die Eltern von Heinz Schlösser wohnten am Kanal in Levensau. Von ihnen hat Käthe Schröder Gössel geholt.
 
-Heinz Schlösser blieb am 12.10.1940 auf See.
+Heinz Schlösser gehörte zur Crew 1938 und diente als Oberfähnrich zur See auf dem Schnellboot *S 37*. Er blieb am 12.10.1940 bei einem Einsatz auf See. Sein Körper wurde später an der dänischen Küste angespült.
 
-[📍 auf See (Nordsee) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Nordsee)
+[📍 Seegebiet Nordsee / Dänische Küste auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=56.0,7.0)
 
 <iframe 
   width="100%" 
@@ -216,7 +216,7 @@ Heinz Schlösser blieb am 12.10.1940 auf See.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Nordsee&t=&z=4&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=56.0,7.0&t=&z=6&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1315,12 +1315,11 @@ nav_exclude: true
 
 # Johannes Hass
 
-Johannes Hass und [Helmut Hass](../hass-helmut/) waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
+Johannes Hass und [Helmut Hass](../hass-helmut/) waren Brüder und die Halbgeschwister von Kurt Freese. Heute hat den Hof Lars Malmström.
 
+Johannes Hass wird seit 1945 im ehemaligen Westpreußen (heute Polen) vermisst.
 
-Johannes Hass wird seit 1945 in Westpreußen vermisst.
-
-[📍 Westpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Westpreu%C3%9Fen)
+[📍 Region Westpreußen (heute Polen) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=54.0,18.5)
 
 <iframe 
   width="100%" 
@@ -1328,7 +1327,7 @@ Johannes Hass wird seit 1945 in Westpreußen vermisst.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Westpreu%C3%9Fen&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=54.0,18.5&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1365,11 +1364,12 @@ nav_exclude: true
 ---
 
 # Bernhard Pfahl 
-Bernhard Pfahl war der Sohn von Frisör Pfahl, die Eltern  wohnten zuerst in zwei Bauwagen mit Friseurbetrieb auf dem Grundstück (heute Stach).  Später Neubau im Bölskamp, [Familie Schneider/Stein](../schneider-walter/) wohnte oben.
 
-Bernhard Pfahl wird seit 1945 in Pommern vermisst.
+Bernhard Pfahl war der Sohn von Frisör Pfahl, die Eltern wohnten zuerst in zwei Bauwagen mit Friseurbetrieb auf dem Grundstück (heute Stach). Später Neubau im Bölskamp, [Familie Schneider/Stein](../schneider-walter/) wohnte oben.
 
-[📍 Pommern auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Pommern)
+Bernhard Pfahl wird seit 1945 im damaligen Pommern (heute größtenteils Polen / Mecklenburg-Vorpommern) vermisst.
+
+[📍 Region Pommern auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=53.8,15.0)
 
 <iframe 
   width="100%" 
@@ -1377,7 +1377,7 @@ Bernhard Pfahl wird seit 1945 in Pommern vermisst.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Pommern&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=53.8,15.0&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1607,7 +1607,7 @@ Seine letzte Ruhestätte befindet sich auf der Kriegsgräberstätte Gontscharnoj
 
 [Kartenansicht auf Google Maps öffnen](https://maps.google.com/maps?q=44.470756,33.705583)
 
-<iframe src="https://maps.google.com/maps?q=44.470756,33.705583&amp;z=8&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<iframe src="https://maps.google.com/maps?q=44.470756,33.705583&amp;z=4&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
 ============================================================
@@ -1680,10 +1680,10 @@ nav_exclude: true
 
 # Otto Jöhnk
 
-Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (Petersen) und Elsbeth.  Er war Landwirt.
+Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (Petersen) und Elsbeth. Er war Landwirt.
 
 
-Otto Jöhnk ist am 14.01.1944 in Nikopol in Russland gefallen.
+Otto Jöhnk ist am 14.01.1944 in Nikopol (in der heutigen Ukraine) gefallen.
 
 [📍 Nikopol auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Nikopol%2C%20Ukraine)
 
@@ -1693,7 +1693,7 @@ Otto Jöhnk ist am 14.01.1944 in Nikopol in Russland gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Nikopol%2C%20Ukraine&t=&z=6&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Nikopol%2C%20Ukraine&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 

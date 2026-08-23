@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Otto Jöhnk"
+death_date: "14.01.1944"
+location: "Nikopol"
 ---
 
 # Otto Jöhnk

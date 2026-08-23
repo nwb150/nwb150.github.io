@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Alfred Galinsky"
+location: "Russland"
 ---
 
 # Alfred Galinsky

@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Hinrich Popp"
+death_date: "18.07.1893"
 ---
 
 # Hinrich Popp
@@ -21,4 +23,3 @@ Hinrich Popp ist am 24.06.1916 gefallen.
 ![Hinrich Popp](hinrich-popp-6.jpg)
 
 ![Hinrich Popp](hinrich-popp-2.jpg)
-

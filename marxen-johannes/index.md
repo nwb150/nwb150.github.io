@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Johannes Marxen"
+death_date: "14.09.1942"
+location: "Russland"
 ---
 
 # Johannes Marxen 

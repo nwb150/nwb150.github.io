@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Walter Bast"
+death_date: "13.05.1940"
+location: "Frankreich"
 ---
 
 # Walter Bast 

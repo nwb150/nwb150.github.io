@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Arthur Frohreich"
+death_date: "21.12.1945"
+location: "Italien"
 ---
 
 # Arthur Frohreich

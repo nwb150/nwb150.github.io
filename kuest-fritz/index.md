@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Fritz Küst"
+death_date: "25.04.1945"
+location: "Bayern"
 ---
 
 # Fritz Küst

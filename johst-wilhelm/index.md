@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Wilhelm Johst"
+death_date: "12.10.1914"
+location: "Lommel (Belgien)"
 ---
 
 # Wilhelm Johst

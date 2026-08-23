@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Erich Hülle"
+death_date: "13.02.1942"
+location: "Russland"
 ---
 
 # Erich Hülle

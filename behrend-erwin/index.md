@@ -1,5 +1,8 @@
 ---
 nav_exclude: true
+title: "Erwin Behrend"
+death_date: "24.12.1944"
+location: "Frankreich"
 ---
 
 # Erwin Behrend

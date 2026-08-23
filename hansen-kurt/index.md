@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Kurt Hansen"
+location: "Russland"
 ---
 
 # Kurt Hansen

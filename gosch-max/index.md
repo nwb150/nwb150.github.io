@@ -1,5 +1,7 @@
 ---
 nav_exclude: true
+title: "Max Gosch"
+location: "Halberstadt"
 ---
 
 # Max Gosch
