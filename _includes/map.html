@@ -1,73 +1,86 @@
-<!-- Leaflet CSS & JS nur einmalig laden -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- Leaflet CSS & JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
-<!-- Karten-Container -->
-<div id="leaflet-map" style="width: 100%; height: 320px; border-radius: 8px; margin-top: 15px; background: #e5e3df; z-index: 1;"></div>
+<!-- Karten-Container mit Datenübergabe aus dem Frontmatter -->
+<div id="leaflet-map" 
+     style="width: 100%; height: 320px; border-radius: 8px; margin-top: 15px; background: #e5e3df; z-index: 1;"
+     data-lat="{{ page.lat }}"
+     data-lng="{{ page.lng }}"
+     data-zoom="{{ page.zoom | default: 12 }}"
+     data-location="{{ page.location }}"
+     data-country="{{ page.country }}"
+     data-title="{{ page.title | escape }}">
+</div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var mapContainer = document.getElementById('leaflet-map');
-  if (!mapContainer) return;
+(function() {
+  function initMap() {
+    var container = document.getElementById('leaflet-map');
+    if (!container || container.dataset.mapLoaded) return;
+    container.dataset.mapLoaded = "true";
 
-  {% if page.lat and page.lng %}
-    // -----------------------------------------------------------
-    // MODUS 1: Ort/Koordinaten vorhanden (z. B. Neuwittenbek)
-    // -----------------------------------------------------------
-    var lat = {{ page.lat }};
-    var lng = {{ page.lng }};
-    var zoom = {{ page.zoom | default: 12 }};
+    var lat = parseFloat(container.getAttribute('data-lat'));
+    var lng = parseFloat(container.getAttribute('data-lng'));
+    var zoom = parseInt(container.getAttribute('data-zoom')) || 12;
+    var location = container.getAttribute('data-location');
+    var country = container.getAttribute('data-country');
+    var title = container.getAttribute('data-title');
 
-    var map = L.map('leaflet-map').setView([lat, lng], zoom);
+    var map;
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    // MODUS 1: Exakte Koordinaten vorhanden (z. B. Neuwittenbek oder Friedhof)
+    if (!isNaN(lat) && !isNaN(lng)) {
+      map = L.map(container).setView([lat, lng], zoom);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
 
-    // Marker mit Pop-up setzen
-    var marker = L.marker([lat, lng]).addTo(map);
-    {% if page.title %}
-      marker.bindPopup("<b>{{ page.title | escape }}</b>").openPopup();
-    {% endif %}
-
-  {% elsif page.country == "RUS" or page.country == "Russland" or page.location == "Russland" %}
-    // -----------------------------------------------------------
+      var marker = L.marker([lat, lng]).addTo(map);
+      if (title) {
+        marker.bindPopup('<b>' + title + '</b>').openPopup();
+      }
+    } 
     // MODUS 2: Landesansicht (z. B. Russland)
-    // -----------------------------------------------------------
-    var map = L.map('leaflet-map').setView([60, 90], 2);
+    else if (location === 'Russland' || country === 'RUS' || country === 'Russland') {
+      map = L.map(container).setView([60, 90], 2);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+      // GeoJSON für Russland laden und dezent einfärben
+      fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/RUS.geo.json')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          L.geoJSON(data, {
+            style: {
+              color: '#8b5cf6',       // Lila Rahmen
+              weight: 1.5,
+              fillColor: '#8b5cf6',   // Lila Füllung
+              fillOpacity: 0.20
+            }
+          }).addTo(map);
+        })
+        .catch(function(err) {
+          console.error("GeoJSON-Fehler:", err);
+        });
+    } 
+    // MODUS 3: Standard Fallback (Europa/Welt)
+    else {
+      map = L.map(container).setView([50, 30], 3);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+    }
+  }
 
-    // GeoJSON für Russland laden und dezent einfärben
-    fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/RUS.geo.json')
-      .then(function(response) { return response.json(); })
-      .then(function(data) {
-        L.geoJSON(data, {
-          style: {
-            color: '#8b5cf6',       // Rahmenfarbe (Lila)
-            weight: 1.5,
-            fillColor: '#8b5cf6',   // Füllfarbe
-            fillOpacity: 0.20       // Transparenz
-          }
-        }).addTo(map);
-      })
-      .catch(function(err) {
-        console.error("Fehler beim Laden der GeoJSON-Landesgrenze:", err);
-      });
-
-  {% else %}
-    // -----------------------------------------------------------
-    // MODUS 3: Fallback (Weltkarte)
-    // -----------------------------------------------------------
-    var map = L.map('leaflet-map').setView([50, 30], 3);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: '© OpenStreetMap'
-    }).addTo(map);
-  {% endif %}
-});
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMap);
+  } else {
+    initMap();
+  }
+})();
 </script>
