@@ -3,7 +3,7 @@ nav_exclude: true
 title: "Willi Qualen"
 lat: 50.080489
 lng: 36.306031
-death_date: "08.06.1903"
+death_date: "04.01.1943"
 location: "Kriegsgräberstätte Charkiw"
 ---
 
@@ -17,7 +17,7 @@ Im Zweiten Weltkrieg diente er als Gefreiter und fiel am 04.01.1943 (nach andere
 
 Nach Informationen des Volksbundes befindet sich sein ursprüngliches Grab im Raum Luhansk. Gedenkend ist er der zentralen deutschen Kriegsgräberstätte am Stadtring von Charkiw (Ukraine) zugeordnet.
 
-[📍 Kriegsgräberstätte Charkiw auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=50.080489,36.306031)
+[📍 Kriegsgräberstätte Charkiw auf Google Maps öffnen](https://maps.app.goo.gl/R8zy6brkGZzK6rpW9)
 
 <iframe 
   width="100%" 
