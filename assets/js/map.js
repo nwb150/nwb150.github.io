@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var map;
 
-  // MODUS 1: Exakte Koordinaten vorhanden
+  // MODUS 1: Exakte Koordinaten vorhanden (z. B. Neuwittenbek / Friedhof)
   if (!isNaN(lat) && !isNaN(lng)) {
     map = L.map(container).setView([lat, lng], zoom);
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -25,29 +26,40 @@ document.addEventListener("DOMContentLoaded", function() {
       marker.bindPopup('<b>' + title + '</b>').openPopup();
     }
   } 
-  // MODUS 2: Landesansicht (z. B. Russland)
+  // MODUS 2: Landesansicht (z. B. Russland) mit detaillierten Beschriftungen
   else if (location === 'Russland' || country === 'RUS' || country === 'Russland') {
-    map = L.map(container).setView([60, 90], 2);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    map = L.map(container).setView([58, 60], 3);
+
+    // Detaillierte Basis-Karte ohne Text (CARTO Voyager)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+      subdomains: 'abcd',
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://carto.com/">CARTO</a>'
     }).addTo(map);
 
+    // GeoJSON-Landesfläche (Lila Füllung)
     fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/RUS.geo.json')
       .then(function(res) { return res.json(); })
       .then(function(data) {
         L.geoJSON(data, {
           style: {
             color: '#8b5cf6',       // Lila Rahmen
-            weight: 1.5,
+            weight: 2,
             fillColor: '#8b5cf6',   // Lila Füllung
-            fillOpacity: 0.20
+            fillOpacity: 0.22
           }
         }).addTo(map);
       })
       .catch(function(err) {
         console.error("GeoJSON-Fehler:", err);
       });
+
+    // Beschriftungs-Ebene (liegt OBERHALB der lila Füllung, damit alle Ländernamen lesbar bleiben)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+      subdomains: 'abcd',
+      pane: 'markerPane' // Platzierung über dem GeoJSON
+    }).addTo(map);
   } 
   // MODUS 3: Fallback (Europa/Welt)
   else {
