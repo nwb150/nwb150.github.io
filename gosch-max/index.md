@@ -6,8 +6,10 @@ location: "Halberstadt"
 
 # Max Gosch
 
-Max Gosch war Lehrer in Neuwittenbek. Mit seiner Frau Marie, geb. Brammer, hatte er eine Tochter, Karin.  Die Familie lebte auf Hof Brammer.
+Max Gosch war Lehrer in Neuwittenbek. Mit seiner Frau Marie, geb. Brammer, hatte er eine Tochter, Karin. Die Familie lebte auf Hof Brammer.
 
+![Die alte Schule von Neuwittenbek](GS_Neuwittenbek_historisch.png)
+*Die alte Schule von Neuwittenbek. Hier hat Max Gosch unterrichtet.*
 
 Max Gosch ist am 9.02.1945 im Krankenhaus von Halberstadt gestorben.
 
