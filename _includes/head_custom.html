@@ -2,6 +2,21 @@
   /* --- GLOBALE GRUNDLAGEN (Gelten für PC und Handy) --- */
   .site-nav { display: none !important; } /* Die Navigationsliste brauchen wir nirgends */
 
+  /* Footer in der oberen Kopfzeile (Sidebar) auf PCs unterdrücken */
+  .side-bar .site-footer,
+  .side-bar .nav-footer {
+    display: none !important;
+  }
+
+  /* Haupt-Footer immer ganz unten im Inhaltsbereich anzeigen und links ausrichten */
+  .main .site-footer,
+  .main-content .site-footer {
+    display: block !important;
+    text-align: left !important;
+    clear: both !important;
+    margin-top: 2rem !important;
+  }
+
   /* --- DYNAMISCHE WEICHE ÜBER JEKYLL LIQUID --- */
   {% if page.url == "/" or page.url == "/index.html" %}
     
