@@ -17,5 +17,5 @@ Otto Jöhnk ist am 14.01.1944 in Nikopol (in der heutigen Ukraine) gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Nikopol%2C%20Ukraine&t=&z=6&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Nikopol%2C%20Ukraine&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
