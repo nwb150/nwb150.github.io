@@ -11,7 +11,7 @@ Max Gosch war Lehrer in Neuwittenbek. Mit seiner Frau Marie, geb. Brammer, hatte
 <figure style="margin: 20px 0;">
   <img src="GS_Neuwittenbek_historisch.png" alt="Die alte Schule von Neuwittenbek" style="display: block; max-width: 100%; height: auto; border-radius: 6px;">
   <figcaption style="font-style: italic; margin-top: 8px; font-size: 0.9em; color: #555;">
-    Die alte Schule von Neuwittenbek. Hier hat Max Gosch unterrichtet.
+    Die alte Schule von Neuwittenbek. Hier hat Max Gosch unterrichtet. Sie liegt direkt am Dorfplatz neben den Gedenksteinen, den sprechenden Steinen.
   </figcaption>
 </figure>
 
