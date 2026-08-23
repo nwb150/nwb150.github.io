@@ -1,1 +1,4 @@
-<!-- Footer entfernt -->
+{% if page.url != "/" %}
+  <hr>
+  <p><a href="{{ '/' | relative_url }}">← Zurück zur Übersicht</a></p>
+{% endif %}<!-- Footer entfernt -->
