@@ -25,5 +25,5 @@ Das Gut Maulen lag etwa 12 Kilometer südwestlich von Königsberg nahe dem Frisc
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Suvorovo,+Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Suvorovo,+Kaliningrad&t=&z=6&ie=UTF8&iwloc=&output=embed">
 </iframe>
