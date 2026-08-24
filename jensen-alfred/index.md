@@ -22,5 +22,5 @@ Er fiel am 23.12.1943 (laut denkmalprojekt.org am 23.09.1943) bei Radia nahe Sul
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Sulmona%2C%20Italien&t=&z=8&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Sulmona%2C%20Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
