@@ -19,7 +19,7 @@ Mit seiner Ehefrau Marie (geb. Hammerich) hatte er eine Tochter, Karin. Die Fami
   </figcaption>
 </figure>
 
-Am 19. Februar 1945 starb Max Gosch im Reservelazarett in Halberstadt.
+Am 19.(9.?) Februar 1945 starb Max Gosch im Reservelazarett in Halberstadt.
 
 [📍 Halberstadt auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Halberstadt%2C%20Deutschland)
 
@@ -29,5 +29,5 @@ Am 19. Februar 1945 starb Max Gosch im Reservelazarett in Halberstadt.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Halberstadt%2C%20Deutschland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Halberstadt%2C%20Deutschland&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
