@@ -22,5 +22,5 @@ Am 8. Februar 1942 fiel Bruno Staude im Alter von 21 Jahren bei Arimier nahe Sta
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=57.9897,31.3572&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=57.9897,31.3572&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
