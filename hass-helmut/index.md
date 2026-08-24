@@ -22,5 +22,5 @@ Am 23. August 1944 fiel Helmut Hass im Alter von 18 Jahren bei Krakau (Polen).
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Krakau%2C%20Polen&t=&z=6&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Krakau%2C%20Polen&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
