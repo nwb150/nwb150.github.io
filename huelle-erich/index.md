@@ -1,17 +1,20 @@
 ---
 nav_exclude: true
 title: "Erich Hülle"
+birth_date: "05.01.1921"
 death_date: "13.02.1942"
-location: "Russland"
+location: "Smolensk, Russland"
 ---
 
 # Erich Hülle
 
-Erich Hülle war ein Bruder von Walter Hülle und Onkel von Norbert Hülle 
+Erich Hülle wurde am 5. Januar 1921 in Neuwittenbek geboren. Er war der Sohn des Landarbeiters Richard Hülle und dessen Ehefrau Katharina (geb. Plogg). 
 
-Erich Hülle ist am 13.02.1942 in Russland gefallen.
+Er war der Bruder von Walter Hülle und der Onkel von Norbert Hülle.
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+Am 13. Februar 1942 starb Erich Hülle im Alter von 21 Jahren im Kriegslazarett in Smolensk (Russland).
+
+[📍 Smolensk (Russland) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Smolensk%2C%20Russland)
 
 <iframe 
   width="100%" 
@@ -19,5 +22,5 @@ Erich Hülle ist am 13.02.1942 in Russland gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Smolensk%2C%20Russland&t=&z=7&ie=UTF8&iwloc=&output=embed">
 </iframe>
