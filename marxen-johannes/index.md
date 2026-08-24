@@ -5,11 +5,11 @@ death_date: "14.09.1942"
 location: "Russland"
 ---
 
-# Johannes Marxen 
+# Johannes Marxen
 
-Johannes Marxen war ein Bruder von [Friedrich Marxen](../marxen-friedrich/) und Hertha Kaiser. Sie wohnten auf dem “Hauf” im Gettorfer Weg. Wolfgang Kaiser ist sein Neffe.
+Johannes Marxen war ein Sohn des Rentners Friedrich Marxen und dessen Ehefrau Amalie (geb. Kröger). Seine Eltern wohnten in Levensau. Seine Geschwister waren [Friedrich Marxen](../marxen-friedrich/) und Hertha Kaiser, die mit ihrer Familie auf dem „Hauf“ im Gettorfer Weg wohnte. Wolfgang Kaiser ist sein Neffe.
 
-Johannes Marxen ist am 14.09.1942 in Russland gefallen.
+Am 14. September 1942 fiel Johannes Marxen in Russland.
 
 [📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
 
