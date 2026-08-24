@@ -20,5 +20,5 @@ Otto Radbruch kehrte nicht nach Hause zurück. Er starb nach dem Krieg am 18. Fe
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=56.3422,30.5239&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=56.3422,30.5239&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
