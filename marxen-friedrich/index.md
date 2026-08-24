@@ -22,5 +22,5 @@ Am 2. Juli 1944 fiel Friedrich Marxen im Alter von 36 Jahren im italienischen Pa
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Parma,+Italien&t=&z=8&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Parma,+Italien&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
