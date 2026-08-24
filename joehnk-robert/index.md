@@ -22,5 +22,5 @@ Am 22. Dezember 1941 fiel Robert Jöhnk im Alter von 21 Jahren bei Naro-Fominsk 
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Naro-Fominsk%2C%20Russland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Naro-Fominsk%2C%20Russland&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>

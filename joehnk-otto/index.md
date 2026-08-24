@@ -22,5 +22,5 @@ Am 14. Januar 1944 fiel Otto Jöhnk im Alter von 37 Jahren in Dneprowka (bei Nik
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Dneprowka%2C%20Ukraine&t=&z=8&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Dneprowka%2C%20Ukraine&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
