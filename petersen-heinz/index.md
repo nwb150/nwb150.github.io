@@ -17,7 +17,7 @@ Am 6. Februar 1945 fiel Heinz Petersen im Alter von 19 Jahren beim Gut Maulen na
 ### Historischer Hintergrund zum Sterbeort
 Das Gut Maulen lag etwa 12 Kilometer südwestlich von Königsberg nahe dem Frischen Haff. Ende Januar und Anfang Februar 1945 fanden in diesem Abschnitt im Rahmen der Vorstöße auf Königsberg schwerste Kämpfe statt. Das Gut wurde am 6. Februar 1945 – dem Todestag von Heinz Petersen – nach tagelangen Gefechten endgültig von der Roten Armee eingenommen. Der Ort selbst existiert heute nicht mehr; das Areal liegt im Bereich von Suworowo (Суворово) / Pribreschny südwestlich des heutigen Kaliningrad.
 
-[📍 Bereich Suworowo / ehem. Gut Maulen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Suvorovo+Kaliningrad+Russland)
+[📍 Bereich Suworowo / ehem. Gut Maulen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=54.6465,20.3800)
 
 <iframe 
   width="100%" 
@@ -25,5 +25,5 @@ Das Gut Maulen lag etwa 12 Kilometer südwestlich von Königsberg nahe dem Frisc
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Suvorovo+Kaliningrad+Russland&t=&z=6&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=54.6465,20.3800&t=&z=11&ie=UTF8&iwloc=&output=embed">
 </iframe>
