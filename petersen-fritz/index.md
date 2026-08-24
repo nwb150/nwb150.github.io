@@ -22,5 +22,5 @@ Fritz Petersen geriet in Kriegsgefangenschaft und starb im Herbst 1945 (laut Auf
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Kertsch%2C%20Krim&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Kertsch%2C%20Krim&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
