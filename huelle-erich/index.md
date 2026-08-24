@@ -22,5 +22,5 @@ Am 13. Februar 1942 starb Erich Hülle im Alter von 21 Jahren im Kriegslazarett 
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Smolensk%2C%20Russland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Smolensk%2C%20Russland&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
