@@ -25,5 +25,5 @@ Das Gut Maulen lag etwa 12 Kilometer südwestlich von Königsberg nahe dem Frisc
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=54.6465,20.3800&t=&z=11&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=54.6465,20.3800&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
