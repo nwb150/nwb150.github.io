@@ -47,6 +47,14 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 
 ## Interaktive Karte
 
+Diese Karte visualisiert die bekannten Sterbe-, Vermissten- und Beisetzungsorte der Neuwittenbeker Gefallenen und macht das geografische Ausmaß der Kriegsschicksale greifbar.
+
+**Funktionen:**
+* **Details & Biografie:** Ein Klick auf einen roten Marker öffnet ein Infofenster mit Name, Datum, Ort und direktem Link zur jeweiligen Biografie.
+* **Live-Suche:** Über das Suchfeld oben links kann gezielt nach bestimmten Namen oder Regionen/Ländern gefiltert werden.
+* **Gruppierung (Clustering):** Nahe beieinander liegende Orte werden automatisch in Zahlen-Gruppen zusammengefasst und entfalten sich beim Hineinzoomen.
+* **Mobile Nutzung:** Damit die Seite auf Smartphones flüssig scrollt, lässt sich die Karte auf Touch-Displays mit **zwei Fingern** verschieben und zoomen.
+
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
