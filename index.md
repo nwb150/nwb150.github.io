@@ -50,6 +50,7 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css" type="text/css" />
 
 <style>
   .map-controls {
@@ -154,11 +155,14 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.js"></script>
 
 {% raw %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    var map = L.map('map').setView([52.0, 19.0], 4);
+    var map = L.map('map', {
+      gestureHandling: true
+    }).setView([52.0, 19.0], 4);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
