@@ -1,4 +1,14 @@
 title: Die sprechenden Steine von Neuwittenbek
+description: "150 Jahre Geschichte – Ein digitales Gedenkprojekt der Gemeinde Neuwittenbek mit interaktiver Karte und historischen Biografien."
+
+# Absolute URL-Struktur für Google & Sitemap
+url: "https://nwb150.github.io"
+baseurl: ""
+
 remote_theme: just-the-docs/just-the-docs
 color_scheme: light
 search_enabled: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
