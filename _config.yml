@@ -12,3 +12,5 @@ search_enabled: false
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+google_site_verification: "kUtWIuYZxuT-hduczIN2KDcfpkrm43R6blN2343Fr-k"
