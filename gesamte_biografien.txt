@@ -47,8 +47,233 @@ Hinter den Mauern und Wegen unseres Dorfes verbergen sich die Lebenswege und Sch
 * [Walter Schoenfeld](./schoenfeld-walter/)
 * [Bruno Staude](./staude-bruno/)
 * [Heinrich Stroeh](./stroeh-heinrich/)
-
 <!-- SOLDIER_LIST_END -->
+
+## Interaktive Karte
+
+Diese Karte visualisiert die bekannten Sterbe- und Vermisstenorte der Neuwittenbeker Gefallenen. Nutze die Suche zum Filtern nach Namen oder Orten und klicke auf einen Marker, um direkt zur Biografie zu gelangen.
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css" type="text/css" />
+
+<style>
+  .map-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+    align-items: center;
+    background: #f6f8fa;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+  }
+  .map-controls input {
+    padding: 9px 14px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 0.95em;
+    outline: none;
+    flex-grow: 1;
+    max-width: 420px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .map-controls input:focus {
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
+  }
+  .map-stats {
+    font-size: 0.88em;
+    color: #57606a;
+    font-weight: 500;
+    margin-left: auto;
+  }
+
+  #map {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    border: 1px solid #d0d7de;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    margin: 10px 0 25px 0;
+    z-index: 1;
+  }
+
+  .custom-pin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-pin {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #cf222e;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    transition: transform 0.15s ease-in-out;
+  }
+  .custom-pin:hover {
+    transform: scale(1.35);
+  }
+
+  .map-popup {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.45;
+    padding: 4px;
+  }
+  .map-popup h4 {
+    margin: 0 0 6px 0;
+    font-size: 1.05em;
+    color: #1f2328;
+    border-bottom: 1px solid #eaeef2;
+    padding-bottom: 4px;
+  }
+  .map-popup p {
+    margin: 6px 0 12px 0;
+    font-size: 0.88em;
+    color: #57606a;
+  }
+  .map-popup a {
+    display: inline-block;
+    background: #24292f;
+    color: #ffffff !important;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .map-popup a:hover {
+    background: #cf222e;
+  }
+</style>
+
+<div class="map-controls">
+  <input type="text" id="searchInput" placeholder="🔍 Name oder Ort suchen..." />
+  <div class="map-stats" id="markerCount">Zeige 0 Einträge</div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.js"></script>
+
+{% raw %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var map = L.map('map', {
+      gestureHandling: true
+    }).setView([52.0, 19.0], 4);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '© OpenStreetMap-Mitwirkende'
+    }).addTo(map);
+
+    var markersCluster = L.markerClusterGroup({
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      maxClusterRadius: 40
+    });
+
+    var soldiers = [
+      { name: "Hans Detlef Hölk", lat: 44.470756, lng: 33.705583, date: "06.01.1942", loc: "Gontscharnoje (Krim)", link: "./hoelk-hans-detlef/" },
+      { name: "Willi Qualen", lat: 50.080489, lng: 36.306031, date: "04.01.1943", loc: "Charkiw / Luhansk", link: "./qualen-willi/" },
+      { name: "Wilhelm Johst", lat: 51.192, lng: 5.313, date: "24.05.1940", loc: "Lommel (Belgien)", link: "./johst-wilhelm/" },
+      { name: "Heinz Schlösser", lat: 56.0, lng: 7.0, date: "12.10.1940", loc: "Seegebiet Nordsee / Dänemark", link: "./schloesser-heinz/" },
+      { name: "Otto Jöhnk", lat: 47.567, lng: 34.394, date: "14.01.1944", loc: "Nikopol (Ukraine)", link: "./joehnk-otto/" },
+      { name: "Walter Schönfeld", lat: 52.375, lng: 9.732, date: "11.05.1941", loc: "Hannover", link: "./schoenfeld-walter/" },
+      { name: "Max Gosch", lat: 51.894, lng: 11.053, date: "09.02.1945", loc: "Halberstadt", link: "./gosch-max/" },
+      { name: "Fritz Küst", lat: 48.79, lng: 11.42, date: "25.04.1945", loc: "Bayern", link: "./kuest-fritz/" },
+      { name: "Peter Radbruch", lat: 51.6, lng: 7.8, date: "23.06.1945", loc: "Westfalen", link: "./radbruch-peter/" },
+      { name: "Heinrich Ströh", lat: 54.368, lng: 9.967, date: "16.11.1951", loc: "Neuwittenbek", link: "./stroeh-heinrich/" },
+      { name: "Johannes Hass", lat: 54.0, lng: 18.5, date: "1945", loc: "Westpreußen (Polen)", link: "./hass-johannes/" },
+      { name: "Bernhard Pfahl", lat: 53.8, lng: 15.0, date: "1945", loc: "Pommern", link: "./pfahl-bernhard/" },
+      { name: "Kurt Klein", lat: 54.71, lng: 20.51, date: "27.02.1945", loc: "Ostpreußen (Königsberg)", link: "./klein-kurt/" },
+      { name: "Heinz Petersen", lat: 54.68, lng: 20.45, date: "06.02.1945", loc: "Ostpreußen", link: "./petersen-heinz/" },
+      { name: "Willy Jöhnk", lat: 51.919, lng: 19.145, date: "21.01.1945", loc: "Polen", link: "./joehnk-willy/" },
+      { name: "Walter Bast", lat: 48.85, lng: 2.35, date: "13.05.1940", loc: "Frankreich", link: "./bast-walter/" },
+      { name: "Erwin Behrend", lat: 47.0, lng: 2.5, date: "24.12.1944", loc: "Frankreich", link: "./behrend-erwin/" },
+      { name: "Alfred Jensen", lat: 42.5, lng: 12.5, date: "23.12.1943", loc: "Italien", link: "./jensen-alfred/" },
+      { name: "Friedrich Marxen", lat: 43.0, lng: 11.5, date: "02.07.1944", loc: "Italien", link: "./marxen-friedrich/" },
+      { name: "Arthur Frohreich", lat: 42.0, lng: 13.0, date: "21.12.1945", loc: "Italien", link: "./frohreich-arthur/" },
+      { name: "Friedrich Bast", lat: 55.75, lng: 37.61, date: "23.12.1941", loc: "Russland", link: "./bast-friedrich/" },
+      { name: "Robert Jöhnk", lat: 55.80, lng: 37.50, date: "22.12.1941", loc: "Russland", link: "./joehnk-robert/" },
+      { name: "Bruno Staude", lat: 55.70, lng: 37.70, date: "08.02.1942", loc: "Russland", link: "./staude-bruno/" },
+      { name: "Erich Hülle", lat: 55.65, lng: 37.55, date: "13.02.1942", loc: "Russland", link: "./huelle-erich/" },
+      { name: "Johannes Marxen", lat: 55.85, lng: 37.65, date: "14.09.1942", loc: "Russland", link: "./marxen-johannes/" },
+      { name: "Alfred Galinsky", lat: 56.00, lng: 38.00, date: "1943", loc: "Russland", link: "./galinsky-alfred/" },
+      { name: "Max Galinsky", lat: 56.10, lng: 38.10, date: "1945", loc: "Russland", link: "./galinsky-max/" },
+      { name: "Hans Paetow", lat: 55.50, lng: 37.20, date: "1944", loc: "Russland", link: "./paetow-hans/" },
+      { name: "Kurt Hansen", lat: 55.40, lng: 37.30, date: "1944", loc: "Russland", link: "./hansen-kurt/" },
+      { name: "Helmut Hass", lat: 55.30, lng: 37.40, date: "23.08.1944", loc: "Russland", link: "./hass-helmut/" },
+      { name: "Hans Grotkopp", lat: 55.20, lng: 37.10, date: "12.07.1944", loc: "Russland", link: "./grotkopp-hans/" },
+      { name: "Walter Schneider", lat: 55.10, lng: 37.00, date: "22.11.1944", loc: "Russland", link: "./schneider-walter/" },
+      { name: "Otto Radbruch", lat: 54.90, lng: 36.90, date: "18.02.1945", loc: "Russland", link: "./radbruch-otto/" },
+      { name: "Erich Görcke", lat: 54.80, lng: 36.80, date: "11.04.1945", loc: "Russland", link: "./goercke-erich/" },
+      { name: "Fritz Petersen", lat: 54.70, lng: 36.70, date: "Oktober 1945", loc: "Russland", link: "./petersen-fritz/" },
+      { name: "Heinz Pohl", lat: 54.60, lng: 36.60, date: "10.02.1947", loc: "Russland", link: "./pohl-heinz/" }
+    ];
+
+    var allMarkers = [];
+
+    function getPinIcon() {
+      return L.divIcon({
+        className: 'custom-pin-wrapper',
+        html: '<div class="custom-pin"></div>',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+      });
+    }
+
+    function renderMap(filteredSoldiers) {
+      markersCluster.clearLayers();
+      allMarkers = [];
+
+      filteredSoldiers.forEach(function(s) {
+        var popupContent = 
+          '<div class="map-popup">' +
+            '<h4>' + s.name + '</h4>' +
+            '<p><strong>Datum:</strong> ' + s.date + '<br><strong>Ort:</strong> ' + s.loc + '</p>' +
+            '<a href="' + s.link + '">Zur Biografie →</a>' +
+          '</div>';
+
+        var marker = L.marker([s.lat, s.lng], { icon: getPinIcon() }).bindPopup(popupContent);
+        markersCluster.addLayer(marker);
+        allMarkers.push(marker);
+      });
+
+      map.addLayer(markersCluster);
+      document.getElementById('markerCount').innerText = 'Zeige ' + filteredSoldiers.length + ' von ' + soldiers.length + ' Einträgen';
+
+      if (allMarkers.length > 0) {
+        var group = new L.featureGroup(allMarkers);
+        map.fitBounds(group.getBounds().pad(0.1));
+      }
+    }
+
+    function filterData() {
+      var searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      var filtered = soldiers.filter(function(s) {
+        return s.name.toLowerCase().includes(searchVal) || s.loc.toLowerCase().includes(searchVal);
+      });
+
+      renderMap(filtered);
+    }
+
+    document.getElementById('searchInput').addEventListener('input', filterData);
+
+    renderMap(soldiers);
+  });
+</script>
+{% endraw %}
 
 ## Erinnerungen lebendig halten – Macht mit!
 Manche der Erinnerungen rund um diese Gedenksteine leben heute nur noch in den Köpfen derer, die sie miterlebt haben oder denen sie weitererzählt wurden. Wir möchten verhindern, dass diese wertvollen, aber langsam verblassenden Erinnerungen im Laufe der Zeit verloren gehen. Ein Anfang ist gemacht, mit der großen Hilfe von [Frau Tams](./stroeh-heinrich/). Habt ihr noch persönliche Anekdoten, historische Details, alte Dokumente oder Fotos? Wer Erinnerungen teilen kann und möchte, meldet sich bitte direkt bei uns.
@@ -65,16 +290,21 @@ DATEI: hass-helmut/index.md
 
 ---
 nav_exclude: true
+title: "Helmut Hass"
+birth_date: "03.02.1926"
+death_date: "23.08.1944"
+location: "bei Krakau, Polen"
 ---
 
 # Helmut Hass
 
-Helmut Hass und [Johannes Hass](../hass-johannes/) waren Brüder und die Halbgeschwister von Kurt Freese.  Heute hat den Hof Lars Malmström.
+Helmut Hass wurde am 3. Februar 1926 in Altwittenbek geboren. Seine Mutter war Maria Hass (geb. Schultz). Vor seinem Militärdienst arbeitete er als Schlosser.
 
+Helmut Hass und [Johannes Hass](../hass-johannes/) waren Brüder und die Halbgeschwister von Kurt Freese. Die Familie lebte auf dem Hof, den heute Lars Malmström führt.
 
-Helmut Hass ist am 23.08.1944 in Russland gefallen.
+Am 23. August 1944 fiel Helmut Hass im Alter von 18 Jahren bei Krakau (Polen).
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+[📍 Krakau (Polen) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Krakau%2C%20Polen)
 
 <iframe 
   width="100%" 
@@ -82,7 +312,7 @@ Helmut Hass ist am 23.08.1944 in Russland gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Krakau%2C%20Polen&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -92,17 +322,21 @@ DATEI: jensen-alfred/index.md
 
 ---
 nav_exclude: true
+title: "Alfred Jensen"
+birth_date: "01.06.1923"
+death_date: "23.09.1943"
+location: "Sulmona, Italien"
 ---
 
 # Alfred Jensen
 
+Alfred Jensen wurde am 1. Juni 1923 in Ostpreußen geboren. Er arbeitete vor seinem Militärdienst als Dreher in Altwittenbek. Seine Eltern waren der Reichsangestellte Alfred Jensen und dessen Ehefrau Amalie (geb. Rim...(?).
 
-Alfred Jensen war ein Bruder von Detlef Jensen und ein Onkel des jetzigen Alfred Jensen.
+Im Zweiten Weltkrieg diente er als Obergefreiter. Er war der Bruder von Detlef Jensen und der Onkel des heutigen Alfred Jensen.
 
+Er fiel am 23.12.1943 (laut denkmalprojekt.org am 23.09.1943) bei Radia nahe Sulmona in Italien.
 
-Alfred Jensen ist einen Tag vor Heiligabend am 23.12.1943 in Italien gefallen.
-
-[📍 Italien auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Italien)
+[📍 Sulmona (Italien) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Sulmona%2C%20Italien)
 
 <iframe 
   width="100%" 
@@ -110,7 +344,7 @@ Alfred Jensen ist einen Tag vor Heiligabend am 23.12.1943 in Italien gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Sulmona%2C%20Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -120,15 +354,21 @@ DATEI: marxen-friedrich/index.md
 
 ---
 nav_exclude: true
+title: "Friedrich Marxen"
+birth_date: "06.03.1908"
+death_date: "02.07.1944"
+location: "Parma, Italien"
 ---
 
 # Friedrich Marxen 
 
-Friedrich Marxen war ein Bruder von [Johannes Marxen](../marxen-johannes/).
+Friedrich Marxen wurde am 6. März 1908 in Halstenbek (Kreis Pinneberg) geboren. Er war der Sohn des Rentners Friedrich Marxen und dessen Ehefrau Amalie (geb. Kröger). Seine Eltern lebten in Levensau. Sein Bruder war [Johannes Marxen](../marxen-johannes/).
 
-Friedrich Marxen ist am 02.07.1944 in Italien gefallen.
+Zuletzt wohnte er in Gettorf und arbeitete als Kraftfahrer.
 
-[📍 Italien auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Italien)
+Am 2. Juli 1944 fiel Friedrich Marxen im Alter von 36 Jahren im italienischen Parma.
+
+[📍 Parma (Italien) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Parma,+Italien)
 
 <iframe 
   width="100%" 
@@ -136,7 +376,7 @@ Friedrich Marxen ist am 02.07.1944 in Italien gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Italien&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Parma,+Italien&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -146,6 +386,8 @@ DATEI: popp-hinrich/index.md
 
 ---
 nav_exclude: true
+title: "Hinrich Popp"
+death_date: "18.07.1893"
 ---
 
 # Hinrich Popp
@@ -169,13 +411,15 @@ Hinrich Popp ist am 24.06.1916 gefallen.
 ![Hinrich Popp](hinrich-popp-2.jpg)
 
 
-
 ============================================================
 DATEI: frohreich-arthur/index.md
 ============================================================
 
 ---
 nav_exclude: true
+title: "Arthur Frohreich"
+death_date: "21.12.1945"
+location: "Italien"
 ---
 
 # Arthur Frohreich
@@ -200,6 +444,11 @@ DATEI: schloesser-heinz/index.md
 
 ---
 nav_exclude: true
+title: "Heinz Schlösser"
+lat: 56.0
+lng: 7.0
+death_date: "12.10.1940"
+location: "Seegebiet Nordsee / Dänische Küste"
 ---
 
 # Heinz Schlösser 
@@ -226,15 +475,21 @@ DATEI: huelle-erich/index.md
 
 ---
 nav_exclude: true
+title: "Erich Hülle"
+birth_date: "05.01.1921"
+death_date: "13.02.1942"
+location: "Smolensk, Russland"
 ---
 
 # Erich Hülle
 
-Erich Hülle war ein Bruder von Walter Hülle und Onkel von Norbert Hülle 
+Erich Hülle wurde am 5. Januar 1921 in Neuwittenbek geboren. Er war der Sohn des Landarbeiters Richard Hülle und dessen Ehefrau Katharina (geb. Plogg). 
 
-Erich Hülle ist am 13.02.1942 in Russland gefallen.
+Er war der Bruder von Walter Hülle und der Onkel von Norbert Hülle.
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+Am 13. Februar 1942 starb Erich Hülle im Alter von 21 Jahren im Kriegslazarett in Smolensk (Russland).
+
+[📍 Smolensk (Russland) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Smolensk%2C%20Russland)
 
 <iframe 
   width="100%" 
@@ -242,7 +497,7 @@ Erich Hülle ist am 13.02.1942 in Russland gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Smolensk%2C%20Russland&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -252,6 +507,8 @@ DATEI: galinsky-alfred/index.md
 
 ---
 nav_exclude: true
+title: "Alfred Galinsky"
+location: "Russland"
 ---
 
 # Alfred Galinsky
@@ -278,15 +535,21 @@ DATEI: staude-bruno/index.md
 
 ---
 nav_exclude: true
+title: "Bruno Staude"
+birth_date: "25.11.1920"
+death_date: "08.02.1942"
+location: "Arimier (bei Staraja Russa), Russland"
 ---
 
 # Bruno Staude
 
-Bruno Staude war der einzige Sohn von Lisbeth Staude.  Sie wohnten in der Dorfstraße, das Haus ist im Krieg abgebrannt. Heute steht auf dem Grundstück das Haus von Fiedler.  Seine Mutter wohnte lange Jahre bei Seiferts in der Bahnhofstraße.
+Bruno Staude wurde am 25. November 1920 in Kiel geboren. Vor seinem Militärdienst arbeitete er als Büromaschinenmechaniker. Seine Eltern waren Karl Staude und Elisabeth ("Lisbeth") Staude (geb. Seemann).
 
-Bruno Staude ist am 08.02.1942 in Russland gefallen.
+Bruno war der einzige Sohn der Familie. Die Familie wohnte ursprünglich in der Dorfstraße; das Wohnhaus brannte jedoch im Krieg ab (heute befindet sich dort das Haus der Familie Fiedler). Seine Mutter wohnte nach dem Krieg lange Jahre bei Familie Seifert in der Bahnhofstraße.
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+Am 8. Februar 1942 fiel Bruno Staude im Alter von 21 Jahren bei Arimier nahe Staraja Russa (Russland).
+
+[📍 Arimier / Staraja Russa (Russland) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=57.9897,31.3572)
 
 <iframe 
   width="100%" 
@@ -294,7 +557,7 @@ Bruno Staude ist am 08.02.1942 in Russland gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=57.9897,31.3572&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -304,6 +567,8 @@ DATEI: paetow-hans/index.md
 
 ---
 nav_exclude: true
+title: "Hans Paetow"
+location: "Russland"
 ---
 
 # Hans Paetow
@@ -346,6 +611,9 @@ DATEI: joehnk-willy/index.md
 
 ---
 nav_exclude: true
+title: "Willy Jöhnk"
+death_date: "21.01.1945"
+location: "Polen"
 ---
 
 # Willy Jöhnk
@@ -372,6 +640,9 @@ DATEI: pohl-heinz/index.md
 
 ---
 nav_exclude: true
+title: "Heinz Pohl"
+death_date: "10.02.1947"
+location: "Russland"
 ---
 
 # Heinz Pohl
@@ -397,16 +668,21 @@ DATEI: schoenfeld-walter/index.md
 
 ---
 nav_exclude: true
+title: "Walter Schönfeldt"
+birth_date: "05.06.1915"
+death_date: "11.05.1941"
+location: "Varrelbusch (Landkreis Cloppenburg)"
 ---
 
-# Walter Schönfeld 
+# Walter Schönfeldt
 
-Walter Schönfelds Eltern wohnten im Altenteilhaus von Heinrich Grotkopp.
+Walter Schönfeldt wurde am 5. Juni 1915 in Landwehr geboren. Vor seinem Militärdienst war er als Bäcker tätig und schlug anschließend die Laufbahn als Berufssoldat ein. Seine Eltern waren der Landwirt Paul Schönfeldt und dessen Ehefrau Margarethe (geb. Kühl). Sie wohnten später im Altenteilhaus von Heinrich Grotkopp.
+
 Margrit Schloots (Bahnhofstraße) ist seine Nichte.
 
-Walter Schönfeld starb am 11.05.1941 in Hannover.
+Im Zweiten Weltkrieg diente er als Soldat. Er kam in der Nacht vom 11. auf den 12. Mai 1941 bei einem Luftkampf über Varrelbusch (nahe Cloppenburg) ums Leben. Sein Leichnam wurde anschließend in die Heimat überführt und beigesetzt.
 
-[📍 Hannover auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Hannover%2C%20Deutschland)
+[📍 Varrelbusch auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=52.8878,8.0264)
 
 <iframe 
   width="100%" 
@@ -414,7 +690,7 @@ Walter Schönfeld starb am 11.05.1941 in Hannover.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Hannover%2C%20Deutschland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=52.8878,8.0264&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1068,6 +1344,11 @@ DATEI: qualen-willi/index.md
 
 ---
 nav_exclude: true
+title: "Willi Qualen"
+lat: 50.080489
+lng: 36.306031
+death_date: "04.01.1943"
+location: "Kriegsgräberstätte Charkiw"
 ---
 
 # Willi Qualen
@@ -1080,7 +1361,7 @@ Im Zweiten Weltkrieg diente er als Gefreiter und fiel am 04.01.1943 (nach andere
 
 Nach Informationen des Volksbundes befindet sich sein ursprüngliches Grab im Raum Luhansk. Gedenkend ist er der zentralen deutschen Kriegsgräberstätte am Stadtring von Charkiw (Ukraine) zugeordnet.
 
-[📍 Kriegsgräberstätte Charkiw auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=50.080489,36.306031)
+[📍 Kriegsgräberstätte Charkiw auf Google Maps öffnen](https://maps.app.goo.gl/R8zy6brkGZzK6rpW9)
 
 <iframe 
   width="100%" 
@@ -1098,6 +1379,9 @@ DATEI: bast-walter/index.md
 
 ---
 nav_exclude: true
+title: "Walter Bast"
+death_date: "13.05.1940"
+location: "Frankreich"
 ---
 
 # Walter Bast 
@@ -1124,16 +1408,21 @@ DATEI: joehnk-robert/index.md
 
 ---
 nav_exclude: true
+title: "Robert Jöhnk"
+birth_date: "10.01.1920"
+death_date: "22.12.1941"
+location: "Naro-Fominsk, Russland"
 ---
 
 # Robert Jöhnk
 
-Robert Jöhnk war der jüngere Bruder von Johann Jöhnk und ein Neffe von Otto Jöhnk (Berg).
+Robert Jöhnk wurde am 10. Januar 1920 in Neuwittenbek geboren. Er war der Sohn des Bauerns Hans Jöhnk und dessen Ehefrau Anna (geb. Laß). Vor seinem Militärdienst arbeitete er als Bäcker. Im Zweiten Weltkrieg diente er als Gefreiter.
 
+Er war der jüngere Bruder von Johann Jöhnk und ein Neffe von Otto Jöhnk (Berg).
 
-Robert Jöhnk ist am 22.12.1941 in Russland gefallen.
+Am 22. Dezember 1941 fiel Robert Jöhnk im Alter von 21 Jahren bei Naro-Fominsk (Russland).
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+[📍 Naro-Fominsk (Russland) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Naro-Fominsk%2C%20Russland)
 
 <iframe 
   width="100%" 
@@ -1141,7 +1430,7 @@ Robert Jöhnk ist am 22.12.1941 in Russland gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Naro-Fominsk%2C%20Russland&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1151,6 +1440,9 @@ DATEI: radbruch-peter/index.md
 
 ---
 nav_exclude: true
+title: "Peter Radbruch"
+death_date: "23.06.1945"
+location: "Westfalen"
 ---
 
 # Peter Radbruch 
@@ -1176,14 +1468,26 @@ DATEI: gosch-max/index.md
 
 ---
 nav_exclude: true
+title: "Max Gosch"
+birth_date: "11.04.1900"
+death_date: "19.02.1945"
+location: "Halberstadt"
 ---
 
-# Max Gosch
+# Max Gosch 
 
-Max Gosch war Lehrer in Neuwittenbek. Mit seiner Frau Marie, geb. Brammer, hatte er eine Tochter, Karin.  Die Familie lebte auf Hof Brammer.
+Max Gosch wurde am 11. April 1900 in Kiel-Pries geboren. Er lebte in Neuwittenbek, wo er als Lehrer an der Dorfschule unterrichtete. Im Zweiten Weltkrieg diente er als Gefreiter.
 
+Mit seiner Ehefrau Marie (geb. Hammerich) hatte er eine Tochter, Karin. Die Familie lebte auf dem Hof Brammer.
 
-Max Gosch ist am 9.02.1945 im Krankenhaus von Halberstadt gestorben.
+<figure style="margin: 20px 0;">
+  <img src="GS_Neuwittenbek_historisch.png" alt="Die alte Schule von Neuwittenbek" style="display: block; max-width: 100%; height: auto; border-radius: 6px;">
+  <figcaption style="font-style: italic; margin-top: 8px; font-size: 0.9em; color: #555;">
+    Die alte Schule von Neuwittenbek. Hier hat Max Gosch unterrichtet. Sie liegt direkt am Dorfplatz neben den Gedenksteinen, den sprechenden Steinen.
+  </figcaption>
+</figure>
+
+Am 19.(9.?) Februar 1945 starb Max Gosch im Reservelazarett in Halberstadt.
 
 [📍 Halberstadt auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Halberstadt%2C%20Deutschland)
 
@@ -1193,7 +1497,7 @@ Max Gosch ist am 9.02.1945 im Krankenhaus von Halberstadt gestorben.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Halberstadt%2C%20Deutschland&t=&z=7&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Halberstadt%2C%20Deutschland&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1203,6 +1507,9 @@ DATEI: schneider-walter/index.md
 
 ---
 nav_exclude: true
+title: "Walter Schneider"
+death_date: "22.11.1944"
+location: "Russland"
 ---
 
 # Walter Schneider
@@ -1229,11 +1536,43 @@ Walter Schneider hat Neuwittenbek nie kennengelernt. Er ist am 22.11.1944 in Rus
 
 
 ============================================================
+DATEI: bast-friedrich/index (Kopie).md
+============================================================
+
+---
+nav_exclude: true
+title: "Friedrich Bast"
+death_date: "23.12.1941"
+location: "Russland"
+---
+
+# Friedrich Bast 
+
+Friedrich und [Walter Bast](../bast-walter/) waren die Brüder des schwerbehinderten Albert Bast. Auf dem Hof von Hans und Lena Jöhnk (heute Peter und Annette Jöhnk) war er gut versorgt und hat dort mitgearbeitet.
+
+Friedrich Bast ist am 23.12.1941 in Russland gefallen.
+
+[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+
+<iframe 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 8px; margin-top: 10px;" 
+  loading="lazy" 
+  allowfullscreen 
+  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+
+============================================================
 DATEI: bast-friedrich/index.md
 ============================================================
 
 ---
 nav_exclude: true
+title: "Friedrich Bast"
+death_date: "23.12.1941"
+location: "Russland"
 ---
 
 # Friedrich Bast 
@@ -1260,6 +1599,9 @@ DATEI: johst-wilhelm/index.md
 
 ---
 nav_exclude: true
+title: "Wilhelm Johst"
+death_date: "12.10.1914"
+location: "Lommel (Belgien)"
 ---
 
 # Wilhelm Johst
@@ -1286,14 +1628,19 @@ DATEI: radbruch-otto/index.md
 
 ---
 nav_exclude: true
+title: "Otto Radbruch"
+birth_date: "08.05.1905"
+death_date: "18.02.1946"
+location: "Welikije Luki, Russland"
 ---
 
-# Otto Radbruch 
-Vor dem Krieg arbeitete Otto Radbruch in einer Schlachterei in Hamburg. 
+# Otto Radbruch
 
-Otto Radbruch kam nicht wieder zurück nach Hause, er ist am 18.02.1945 in Russland verhungert.
+Otto Hermann August Radbruch wurde am 8. Mai 1905 in Neuwittenbek geboren. Vor dem Krieg arbeitete er in einer Schlachterei in Hamburg. Im Zweiten Weltkrieg diente er als Gefreiter.
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+Otto Radbruch kehrte nicht nach Hause zurück. Er starb nach dem Krieg am 18. Februar 1946 in Kriegsgefangenschaft (in der Überlieferung verhungert) in Welikije Luki (Russland).
+
+[📍 Welikije Luki (Russland) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=56.3422,30.5239)
 
 <iframe 
   width="100%" 
@@ -1301,7 +1648,7 @@ Otto Radbruch kam nicht wieder zurück nach Hause, er ist am 18.02.1945 in Russl
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=56.3422,30.5239&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1311,6 +1658,10 @@ DATEI: hass-johannes/index.md
 
 ---
 nav_exclude: true
+title: "Johannes Hass"
+lat: 54.0
+lng: 18.5
+location: "Region Westpreußen (heute Polen)"
 ---
 
 # Johannes Hass
@@ -1337,13 +1688,21 @@ DATEI: petersen-fritz/index.md
 
 ---
 nav_exclude: true
+title: "Fritz Petersen"
+birth_date: "27.08.1923"
+death_date: "14.10.1945"
+location: "Kertsch (Krim)"
 ---
 
-# Fritz Petersen 
+# Fritz Petersen
 
-Fritz Petersen ist im Oktober 1945 in Russland gefallen, sein Bruder [Heinz](../petersen-heinz/) am 6. Februar desselben Jahres in Ostpreußen.
+Fritz Petersen wurde am 27. August 1923 in Kiel-Hassee geboren. Er stammte aus Altwittenbek, wo er als Bauer arbeitete. Seine Eltern waren der Schmiedemeister Friedrich Petersen und dessen Ehefrau Marie (geb. Petersen).
 
-[📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
+Im Zweiten Weltkrieg diente er als Gefreiter. Sein Bruder war [Heinz Petersen](../petersen-heinz/), der am 6. Februar 1945 in Ostpreußen fiel.
+
+Fritz Petersen geriet in Kriegsgefangenschaft und starb im Herbst 1945 (laut Aufzeichnungen zwischen dem 14. Oktober und 1. November 1945) im Gefangenenlager bei Kertsch auf der Krim.
+
+[📍 Kertsch (Krim) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kertsch%2C%20Krim)
 
 <iframe 
   width="100%" 
@@ -1351,7 +1710,7 @@ Fritz Petersen ist im Oktober 1945 in Russland gefallen, sein Bruder [Heinz](../
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Russland&t=&z=2&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Kertsch%2C%20Krim&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1361,6 +1720,10 @@ DATEI: pfahl-bernhard/index.md
 
 ---
 nav_exclude: true
+title: "Bernhard Pfahl"
+lat: 53.8
+lng: 15.0
+location: "Region Pommern"
 ---
 
 # Bernhard Pfahl 
@@ -1387,6 +1750,8 @@ DATEI: galinsky-max/index.md
 
 ---
 nav_exclude: true
+title: "Max Galinsky"
+location: "Russland"
 ---
 
 # Max Galinsky
@@ -1413,6 +1778,9 @@ DATEI: grotkopp-hans/index.md
 
 ---
 nav_exclude: true
+title: "Hans Grotkopp"
+death_date: "12.07.1944"
+location: "Russland"
 ---
 
 # Hans Grotkopp
@@ -1440,6 +1808,9 @@ DATEI: kuest-fritz/index.md
 
 ---
 nav_exclude: true
+title: "Fritz Küst"
+death_date: "25.04.1945"
+location: "Bayern"
 ---
 
 # Fritz Küst
@@ -1464,13 +1835,16 @@ DATEI: marxen-johannes/index.md
 
 ---
 nav_exclude: true
+title: "Johannes Marxen"
+death_date: "14.09.1942"
+location: "Russland"
 ---
 
-# Johannes Marxen 
+# Johannes Marxen
 
-Johannes Marxen war ein Bruder von [Friedrich Marxen](../marxen-friedrich/) und Hertha Kaiser. Sie wohnten auf dem “Hauf” im Gettorfer Weg. Wolfgang Kaiser ist sein Neffe.
+Johannes Marxen war ein Sohn des Rentners Friedrich Marxen und dessen Ehefrau Amalie (geb. Kröger). Seine Eltern wohnten in Levensau. Seine Geschwister waren [Friedrich Marxen](../marxen-friedrich/) und Hertha Kaiser, die mit ihrer Familie auf dem „Hauf“ im Gettorfer Weg wohnte. Wolfgang Kaiser ist sein Neffe.
 
-Johannes Marxen ist am 14.09.1942 in Russland gefallen.
+Am 14. September 1942 fiel Johannes Marxen in Russland.
 
 [📍 Russland auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Russland)
 
@@ -1490,6 +1864,9 @@ DATEI: klein-kurt/index.md
 
 ---
 nav_exclude: true
+title: "Kurt Klein"
+death_date: "27.02.1945"
+location: "Region Königsberg / ehem. Ostpreußen"
 ---
 
 # Kurt Klein 
@@ -1516,16 +1893,24 @@ DATEI: petersen-heinz/index.md
 
 ---
 nav_exclude: true
+title: "Heinz Petersen"
+birth_date: "02.06.1925"
+death_date: "06.02.1945"
+location: "Dorf Maulen (bei Königsberg)"
 ---
 
-# Heinz Petersen 
+# Heinz Petersen
 
-Heinz Petersens Bruder [Fritz](../petersen-fritz/) ist im Oktober desselben Jahres in Russland gefallen.
+Heinz Petersen wurde am 2. Juni 1925 in Kiel-Hassee geboren. Vor seinem Militärdienst arbeitete er als Maschinenschlosser. Seine Eltern waren der Schmiedemeister Friedrich Petersen und dessen Ehefrau Marie (geb. Petersen).
 
+Im Zweiten Weltkrieg diente er als Gefreiter. Sein Bruder war [Fritz Petersen](../petersen-fritz/), der im Herbst desselben Jahres in Kriegsgefangenschaft auf der Krim starb.
 
-Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
+Am 6. Februar 1945 fiel Heinz Petersen im Alter von 19 Jahren beim Gut Maulen nahe Königsberg (Ostpreußen).
 
-[📍 Region Königsberg / ehem. Ostpreußen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Kaliningrad)
+### Historischer Hintergrund zum Sterbeort
+Das Gut Maulen lag etwa 12 Kilometer südwestlich von Königsberg nahe dem Frischen Haff. Ende Januar und Anfang Februar 1945 fanden in diesem Abschnitt im Rahmen der Vorstöße auf Königsberg schwerste Kämpfe statt. Das Gut wurde am 6. Februar 1945 – dem Todestag von Heinz Petersen – nach tagelangen Gefechten endgültig von der Roten Armee eingenommen. Der Ort selbst existiert heute nicht mehr; das Areal liegt im Bereich von Suworowo (Суворово) / Pribreschny südwestlich des heutigen Kaliningrad.
+
+[📍 Bereich Suworowo / ehem. Gut Maulen auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=54.6465,20.3800)
 
 <iframe 
   width="100%" 
@@ -1533,7 +1918,7 @@ Heinz Petersen ist am 6. Februar 1945 in Ostpreußen gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Kaliningrad&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=54.6465,20.3800&t=&z=5&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
@@ -1543,6 +1928,9 @@ DATEI: behrend-erwin/index.md
 
 ---
 nav_exclude: true
+title: "Erwin Behrend"
+death_date: "24.12.1944"
+location: "Frankreich"
 ---
 
 # Erwin Behrend
@@ -1567,6 +1955,9 @@ DATEI: goercke-erich/index.md
 
 ---
 nav_exclude: true
+title: "Erich Görcke"
+death_date: "11.04.1945"
+location: "Russland"
 ---
 
 # Erich Görcke
@@ -1592,6 +1983,10 @@ DATEI: hoelk-hans-detlef/index.md
 
 ---
 nav_exclude: true
+title: "Hans Detlef Hölk"
+lat: 44.470756
+lng: 33.705583
+death_date: "06.03.1909"
 ---
 
 # Hans Detlef Hölk
@@ -1616,6 +2011,9 @@ DATEI: stroeh-heinrich/index.md
 
 ---
 nav_exclude: true
+title: "Heinrich Ströh"
+death_date: "16.11.1951"
+location: "Neuwittenbek"
 ---
 
 # Heinrich Ströh
@@ -1650,6 +2048,8 @@ DATEI: hansen-kurt/index.md
 
 ---
 nav_exclude: true
+title: "Kurt Hansen"
+location: "Russland"
 ---
 
 # Kurt Hansen
@@ -1676,16 +2076,21 @@ DATEI: joehnk-otto/index.md
 
 ---
 nav_exclude: true
+title: "Otto Jöhnk"
+birth_date: "03.09.1906"
+death_date: "14.01.1944"
+location: "Dneprowka, Ukraine"
 ---
 
 # Otto Jöhnk
 
-Otto Jöhnk (Postjöhnk) hatte mit seiner Frau Hedwig zwei Töchter: Ingeborg (Petersen) und Elsbeth. Er war Landwirt.
+Otto Jöhnk (Postjöhnk) wurde am 3. September 1906 in Neuwittenbek geboren. Vor seinem Militärdienst arbeitete er als Maurer und Landwirt. Im Zweiten Weltkrieg diente er als Grenadier.
 
+Mit seiner Frau Hedwig hatte er zwei Töchter: Ingeborg (Petersen) und Elsbeth.
 
-Otto Jöhnk ist am 14.01.1944 in Nikopol (in der heutigen Ukraine) gefallen.
+Am 14. Januar 1944 fiel Otto Jöhnk im Alter von 37 Jahren in Dneprowka (bei Nikopol in der heutigen Ukraine).
 
-[📍 Nikopol auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Nikopol%2C%20Ukraine)
+[📍 Dneprowka (Ukraine) auf Google Maps öffnen](https://www.google.com/maps/search/?api=1&query=Dneprowka%2C%20Ukraine)
 
 <iframe 
   width="100%" 
@@ -1693,7 +2098,7 @@ Otto Jöhnk ist am 14.01.1944 in Nikopol (in der heutigen Ukraine) gefallen.
   style="border:0; border-radius: 8px; margin-top: 10px;" 
   loading="lazy" 
   allowfullscreen 
-  src="https://maps.google.com/maps?q=Nikopol%2C%20Ukraine&t=&z=4&ie=UTF8&iwloc=&output=embed">
+  src="https://maps.google.com/maps?q=Dneprowka%2C%20Ukraine&t=&z=4&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 
