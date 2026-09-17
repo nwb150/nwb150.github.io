@@ -15,10 +15,10 @@ Im Krieg diente er im Dienstgrad eines Oberleutnants. Entgegen früherer famili�
 
 ## Fotografien
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
-  <img src="erich-goercke-portrait.jpg" alt="Porträt von Erich Görcke in Uniform" style="max-width: 300px; border-radius: 8px;">
-  <img src="erich-goercke-auf-pferd.jpg" alt="Erich Görcke auf einem Pferd" style="max-width: 300px; border-radius: 8px;">
-  <img src="erich-und-marga-goercke.jpg" alt="Erich Görcke mit seiner Ehefrau Marga" style="max-width: 300px; border-radius: 8px;">
+<div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-start; margin-bottom: 20px;">
+  <img src="erich-goercke-portrait.jpg" alt="Porträt von Erich Görcke in Uniform" style="max-width: 300px; height: auto; border-radius: 8px;">
+  <img src="erich-goercke-auf-pferd.jpg" alt="Erich Görcke auf einem Pferd" style="max-width: 300px; height: auto; border-radius: 8px;">
+  <img src="erich-und-marga-goercke.jpg" alt="Erich Görcke mit seiner Ehefrau Marga" style="max-width: 300px; height: auto; border-radius: 8px;">
 </div>
 
 ## Grablage
